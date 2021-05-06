@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
   <style>
     .ie-panel {
       display: none;
@@ -124,60 +125,186 @@
       </div>
     </header>
     <!--Main section-->
-    <section class="section main-section parallax-scene-js"
-      style="background:url('images/man-worker-firld-by-solar-panels.jpg') no-repeat center center; background-size:cover;">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-8 col-12">
-            <div class="main-decorated-box text-center text-xl-left">
-              <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span
-                  class="align-top offset-top-30 d-inline-block font-weight-light prefix-text">ARE YOU IN CONTROL OF YOUR HOMES ENERGY?</h1>
-              <div class="decorated-subtitle text-italic text-white wow slideInLeft">SAVE OUR WORLD AND YOUR WALLET WITH SUNTEX SOLAR ENERGY 
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+                  <section class="section main-section parallax-scene-js fondo"
+              style="background:url('images/man-worker-firld-by-solar-panels.jpg') no-repeat center center; background-size:cover;">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-xl-8 col-12">
+                    <div class="main-decorated-box text-center text-xl-left">
+                      <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span
+                          class="align-top offset-top-30 d-inline-block font-weight-light prefix-text">ARE YOU IN CONTROL OF YOUR HOMES ENERGY?</h1>
+                      <div class="decorated-subtitle text-italic text-white wow slideInLeft">SAVE OUR WORLD AND YOUR WALLET WITH SUNTEX SOLAR ENERGY 
 
-                The Best Solar Installers/wholesaler in Texas for Quality and Pricing</div>
-            </div>
-            <div class="text-center">
-              <button class="btn btn-primary">GO SOLAR</button>
-            </div>
-          </div>
-          <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a
-              class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center"
-              href="#" data-custom-scroll-to="about"><span class="fa-chevron-down"></span></a></div>
+                        The Best Solar Installers/wholesaler in Texas for Quality and Pricing</div>
+                    </div>
+                    <div class="text-center">
+                      <button class="btn btn-primary">GO SOLAR</button>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a
+                      class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center"
+                      href="#" data-custom-scroll-to="about"><span class="fa-chevron-down"></span></a></div>
+                </div>
+              </div>
+              <div class="decorate-layer">
+                <div class="layer-1">
+                  <div class="layer" data-depth=".20"><img src="images/parallax-item-1-563x532.png" alt="" width="563"
+                      height="266" />
+                  </div>
+                </div>
+                <div class="layer-2">
+                  <div class="layer" data-depth=".30"><img src="images/parallax-item-2-276x343.png" alt="" width="276"
+                      height="171" />
+                  </div>
+                </div>
+                <div class="layer-3">
+                  <div class="layer" data-depth=".40"><img src="images/parallax-item-3-153x144.png" alt="" width="153"
+                      height="72" />
+                  </div>
+                </div>
+                <div class="layer-4">
+                  <div class="layer" data-depth=".20"><img src="images/parallax-item-4-69x74.png" alt="" width="69"
+                      height="37" />
+                  </div>
+                </div>
+                <div class="layer-5">
+                  <div class="layer" data-depth=".40"><img src="images/parallax-item-5-72x75.png" alt="" width="72"
+                      height="37" />
+                  </div>
+                </div>
+                <div class="layer-6">
+                  <div class="layer" data-depth=".30"><img src="images/parallax-item-6-45x54.png" alt="" width="45"
+                      height="27" />
+                  </div>
+                </div>
+              </div>
+            </section>
+        </div>
+        <div class="carousel-item">
+              <section class="section main-section parallax-scene-js fondo"
+              style="background:url('images/a-group-of-boys-running-after-a-ball-past-solar-pa-TUN5GBF.jpg') no-repeat center center; background-size:cover;">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-xl-8 col-12">
+                    <div class="main-decorated-box text-center text-xl-left">
+                      <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span
+                        class="align-top offset-top-30 d-inline-block font-weight-light prefix-text">ARE YOU IN CONTROL OF YOUR HOMES ENERGY?</h1>
+                    <div class="decorated-subtitle text-italic text-white wow slideInLeft">SAVE OUR WORLD AND YOUR WALLET WITH SUNTEX SOLAR ENERGY 
+
+                      The Best Solar Installers/wholesaler in Texas for Quality and Pricing</div>
+                    <div class="text-center">
+                      <button class="btn btn-primary">GO SOLAR</button>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a
+                      class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center"
+                      href="#" data-custom-scroll-to="about"><span class="fa-chevron-down"></span></a></div>
+                </div>
+              </div>
+              <div class="decorate-layer">
+                <div class="layer-1">
+                  <div class="layer" data-depth=".20"><img src="images/parallax-item-1-563x532.png" alt="" width="563"
+                      height="266" />
+                  </div>
+                </div>
+                <div class="layer-2">
+                  <div class="layer" data-depth=".30"><img src="images/parallax-item-2-276x343.png" alt="" width="276"
+                      height="171" />
+                  </div>
+                </div>
+                <div class="layer-3">
+                  <div class="layer" data-depth=".40"><img src="images/parallax-item-3-153x144.png" alt="" width="153"
+                      height="72" />
+                  </div>
+                </div>
+                <div class="layer-4">
+                  <div class="layer" data-depth=".20"><img src="images/parallax-item-4-69x74.png" alt="" width="69"
+                      height="37" />
+                  </div>
+                </div>
+                <div class="layer-5">
+                  <div class="layer" data-depth=".40"><img src="images/parallax-item-5-72x75.png" alt="" width="72"
+                      height="37" />
+                  </div>
+                </div>
+                <div class="layer-6">
+                  <div class="layer" data-depth=".30"><img src="images/parallax-item-6-45x54.png" alt="" width="45"
+                      height="27" />
+                  </div>
+                </div>
+              </div>
+            </section>
+        </div>
+        <div class="carousel-item">
+              <section class="section main-section parallax-scene-js fondo"
+              style="background:url('images/beach-house-with-solar-panels-on-rooftop-for-energ-LUZNZV9.jpg') no-repeat center center; background-size:cover;">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-xl-8 col-12">
+                    <div class="main-decorated-box text-center text-xl-left">
+                      <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span
+                          class="align-top offset-top-30 d-inline-block font-weight-light prefix-text">ARE YOU IN CONTROL OF YOUR HOMES ENERGY?</h1>
+                      <div class="decorated-subtitle text-italic text-white wow slideInLeft">SAVE OUR WORLD AND YOUR WALLET WITH SUNTEX SOLAR ENERGY 
+
+                        The Best Solar Installers/wholesaler in Texas for Quality and Pricing</div>
+                    </div>
+                    <div class="text-center">
+                      <button class="btn btn-primary">GO SOLAR</button>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a
+                      class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center"
+                      href="#" data-custom-scroll-to="about"><span class="fa-chevron-down"></span></a></div>
+                </div>
+              </div>
+              <div class="decorate-layer">
+                <div class="layer-1">
+                  <div class="layer" data-depth=".20"><img src="images/parallax-item-1-563x532.png" alt="" width="563"
+                      height="266" />
+                  </div>
+                </div>
+                <div class="layer-2">
+                  <div class="layer" data-depth=".30"><img src="images/parallax-item-2-276x343.png" alt="" width="276"
+                      height="171" />
+                  </div>
+                </div>
+                <div class="layer-3">
+                  <div class="layer" data-depth=".40"><img src="images/parallax-item-3-153x144.png" alt="" width="153"
+                      height="72" />
+                  </div>
+                </div>
+                <div class="layer-4">
+                  <div class="layer" data-depth=".20"><img src="images/parallax-item-4-69x74.png" alt="" width="69"
+                      height="37" />
+                  </div>
+                </div>
+                <div class="layer-5">
+                  <div class="layer" data-depth=".40"><img src="images/parallax-item-5-72x75.png" alt="" width="72"
+                      height="37" />
+                  </div>
+                </div>
+                <div class="layer-6">
+                  <div class="layer" data-depth=".30"><img src="images/parallax-item-6-45x54.png" alt="" width="45"
+                      height="27" />
+                  </div>
+                </div>
+              </div>
+            </section>
         </div>
       </div>
-      <div class="decorate-layer">
-        <div class="layer-1">
-          <div class="layer" data-depth=".20"><img src="images/parallax-item-1-563x532.png" alt="" width="563"
-              height="266" />
-          </div>
-        </div>
-        <div class="layer-2">
-          <div class="layer" data-depth=".30"><img src="images/parallax-item-2-276x343.png" alt="" width="276"
-              height="171" />
-          </div>
-        </div>
-        <div class="layer-3">
-          <div class="layer" data-depth=".40"><img src="images/parallax-item-3-153x144.png" alt="" width="153"
-              height="72" />
-          </div>
-        </div>
-        <div class="layer-4">
-          <div class="layer" data-depth=".20"><img src="images/parallax-item-4-69x74.png" alt="" width="69"
-              height="37" />
-          </div>
-        </div>
-        <div class="layer-5">
-          <div class="layer" data-depth=".40"><img src="images/parallax-item-5-72x75.png" alt="" width="72"
-              height="37" />
-          </div>
-        </div>
-        <div class="layer-6">
-          <div class="layer" data-depth=".30"><img src="images/parallax-item-6-45x54.png" alt="" width="45"
-              height="27" />
-          </div>
-        </div>
-      </div>
-    </section>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
     <!--About-->
     <section class="section section-sm position-relative" id="about">
       <div class="container">
@@ -302,46 +429,50 @@
       <div class="container">
         <div class="row row-50 justify-content-center">
           <div class="col-12 text-center col-md-10 col-lg-8">
-            <div class="section-name wow fadeInRight" data-wow-delay=".2s">Pricing Options</div>
-            <h3 class="wow fadeInLeft text-capitalize text-primary" data-wow-delay=".3s">Find the perfect plan</h3>
-            <p>We offer three different pricing plans that completely cover the needs of our clients. Feel free to
-              select a preferable plan or learn more about each of them below.</p>
+            <div class="section-name wow fadeInRight text-white" data-wow-delay=".2s">Products Options</div>
+            <h3 class="wow fadeInLeft text-capitalize text-primary" data-wow-delay=".3s">Find the perfect products</h3>
+
           </div>
         </div>
         <div class="row row-30 justify-content-center">
           <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
             <div class="pricing-box bg-gray-dark">
-              <div class="pricing-box-tittle">Starter</div>
-              <p>Perfect for startups</p>
-              <hr />
-              <div class="pricing-box-inner"><span class="pricing-box-symbol">$</span><span
-                  class="pricing-box-price">39</span></div>
-              <div class="pricing-box-label bg-gray">MONTHLY</div>
-              <p>Business Strategy <br> Financial Advisory</p><a
+              <div class="pricing-box-tittle">Radiant Barrier</div>
+              <p style="line-height: 20px;">ttacks the transfer of heat into your attic at the source! This form of Radiant Barrier is a double sided reflective insulation specifically designed to black radiant heat(97%) from transferring into your attic. You can see attic temperatures drop up to as high as 50%! It is also recommended to combine with attic fans for maximum results.
+                The major benefits you can expect are: 10%-25% reduction in your kwh usage on average, extended HVAC life span, Level temperatures inside your home and most importantly pay less a month in electricity!</p>
+             <a
                 class="button button-190 button-circle btn-primary-rounded" href="#">get started</a>
             </div>
           </div>
           <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
             <div class="pricing-box bg-gray-primary">
-              <div class="pricing-box-tittle">Professional</div>
-              <p>Designed for medium businesses</p>
-              <hr />
-              <div class="pricing-box-inner"><span class="pricing-box-symbol">$</span><span
-                  class="pricing-box-price">69</span></div>
-              <div class="pricing-box-label bg-gray-primary-light">MONTHLY</div>
-              <p>Operations Management <br> Strategic Planning</p><a
+              <div class="pricing-box-tittle">HVAC</div>
+              <p style="line-height: 20px;">Stands for heating, ventilation, and air conditioning. An HVAC system is designed to control the environment in which it works. It achieves this by controlling the temperature of a room through heating and cooling. It also controls the humidity level in that environment by controlling the movement and distribution of air inside the room. HVAC typically should be replaced in Texas every 10-12 years. Keeping your A/C’s longer is only going to result in higher electricity bills due to an inefficient HVAC system to cool/heat your home properly. Meaning it is staying on longer than it should to get to your desired comfort.
+                Replacing you A/c system you can see a reduction in your yearly consumption from 15%-30%!</p><a
                 class="button button-190 button-circle btn-rounded-outline" href="#">get started</a>
             </div>
           </div>
           <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
             <div class="pricing-box bg-gray-dark">
-              <div class="pricing-box-tittle">Premium</div>
-              <p>For international enterprises</p>
-              <hr />
-              <div class="pricing-box-inner"><span class="pricing-box-symbol">$</span><span
-                  class="pricing-box-price">89</span></div>
-              <div class="pricing-box-label bg-gray">MONTHLY</div>
-              <p>Quality Engineering <br> Marketing Consulting</p><a
+              <div class="pricing-box-tittle">Solar Attic Fan</div>
+              <p style="line-height: 20px;">Is a great Proactive approach to ventilate heat from inside your attic. Highly recommended when pairing it with Radiant Barrier!</p>
+              <a
+                class="button button-190 button-circle btn-primary-rounded" href="#">get started</a>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
+            <div class="pricing-box bg-gray-dark">
+              <div class="pricing-box-tittle">Blown-in insulation</div>
+              <p style="line-height: 20px;">Is the last line of defense to prevent the radiant heat from coming into your home! The higher the R-Value, the better the thermal performance of the insulation. The recommended level for most attics is to insulate to R-38 or about 10 to 14 inches, depending on insulation type. It will make your home a more comfortable place to be in summer and winter, decrease the cost of your energy bills, and increase the value of your home.</p>
+              <a
+                class="button button-190 button-circle btn-primary-rounded" href="#">get started</a>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
+            <div class="pricing-box bg-gray-dark">
+              <div class="pricing-box-tittle">Roof</div>
+              <p style="line-height: 20px;">Slate, copper and tile roofs can last more than 50 years. Homeowners with fiber cement shingles last about 25 years and asphalt shingle/composition roofs last about 20 years, the NAHB found. It is ideal to do a roof replacement with Solar to avoid out of pocket expenses and get the Solar 26% tax credit benefit on the roof as well. </p>
+              <a
                 class="button button-190 button-circle btn-primary-rounded" href="#">get started</a>
             </div>
           </div>
@@ -426,27 +557,35 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text">$</span>
                         </div>
-                        <input type="number" class="form-control" v-model="totalBill" aria-label="Amount (to the nearest dollar)">
+                        <input type="number" class="form-control" v-model="totalBill" v-on:keyup="totalToBill" aria-label="Amount (to the nearest dollar)">
                       </div>
                   </div>
                   <div class="col-md-2 col-sm-12 text-center"><h4>OR</h4></div>
                   <div class="col-md-5 col-sm-12">
                     <label for="">Enter the avg monthly consumption</label>
                     <div class="input-group mb-3">
-                      <input type="number" class="form-control" v-model="totalConsum">
+                      <input type="number" class="form-control" v-model="totalConsum" v-on:keyup="totalToConsum">
                       <div class="input-group-append">
                         <span class="input-group-text">kwhs</span>
                       </div>
                     </div>
                 </div>
-                  <div id="keys">
-                      <div v-on:click="equal()">=</div>
-                  </div>
                   <div class="col-12 text-center">
                     Solar System Size needed
                     <div class="alert alert-primary" style="margin-right: auto;margin-left: auto;max-width: 300px;" role="alert">
                       {{ sssn }} kw
                     </div>
+                  </div>
+                  <div class="col-12 text-center">
+                   
+                    <div class="alert alert-success" style="margin-right: auto;margin-left: auto;max-width: 300px;border: 10px outset #EC9122;" role="alert">
+                      Total savings <br>
+                      $ 0.00
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <canvas id="myChart" style="max-height: 300px;" width="400" height="400"></canvas>
+                    
                   </div>
               </div>  
           </div>
@@ -507,7 +646,33 @@
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/index.js"></script>
-  
+  <script>
+    var ctx = document.getElementById('myChart');
+
+    const labels = ['1','2','3','4','5','6','7'];
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Solar Energy',
+        data: [10, 20, 10, 20, 10, 20, 10],
+        fill: true,
+        borderColor: 'rgb(236, 145, 34)',
+        tension: 0.1
+      },
+      {
+        label: 'Normal Energy',
+        data: [40, 60, 70, 80, 90, 100, 110],
+        fill: true,
+        borderColor: 'rgb(77, 149, 248)',
+        tension: 0.1
+      }]
+    };
+
+    var myChart = new Chart(ctx, {
+      type: 'line',
+  data: data,
+    });
+    </script> 
   <!--coded by Drel-->
 </body>
 
