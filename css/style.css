@@ -11,6 +11,25 @@
     border-color: #b8daff;
 }
 
+.fondoTrama{
+	background-image: url('/images/fondoTrama.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.box-default-title2 {
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+}
+
+.fondoTrama2{
+	background-image: linear-gradient( rgb(0 0 0), rgb(3 3 3 / 71%) ),url(/images/4909528.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .alert-success {
     color: #FFF;
 	font-weight: bold;
@@ -586,7 +605,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .block-decorate-img img {
-	box-shadow: 1px 5px 27px 0px rgba(0, 0, 0, 0.09);
+	box-shadow: 5px 5px 27px 0px rgb(0 0 0 / 35%);
 }
 
 /*
@@ -5466,7 +5485,9 @@ html [class*='section-'].section-bottom-0 {
 .bg-image-2 {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #404044;
+	background-image: url(/images/fondoGrisDiseño.png);
+	background-position: center;
+	/*background-color: #404044;*/
 }
 
 @media (min-width: 576px) {
@@ -6523,7 +6544,10 @@ html.tablet .ui-to-top {
 	top: 0;
 	right: 0;
 	z-index: 1090;
-	background: #404044;
+	/*background: #404044;*/
+	background-image: url('/images/fondoGrisDiseño.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .rd-navbar-static .rd-navbar--has-dropdown {
