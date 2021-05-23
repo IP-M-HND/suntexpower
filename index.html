@@ -176,29 +176,33 @@
             <div class="row row-15">
               <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="box-default">
-                  <div class="box-default-title2">Innovative Solutions</div>
-                  <p class="box-default-description">Our services and solutions are built on decades of “you win, then we win” business practices. 
-                    We are a full service solar, roofing and energy efficiency company. It is our responsibility when speaking with you to design the most cost effective solution that best matches with your goal.</p>
+                  <div class="box-default-title2">
+                    <a tabindex="0" class="btn  btn-danger" style="font-weight: normal;" role="button" data-toggle="popover" data-trigger="focus" title="Innovative Solutions" data-content="Our services and solutions are built on decades of “you win, then we win” business practices. 
+                    We are a full service solar, roofing and energy efficiency company. It is our responsibility when speaking with you to design the most cost effective solution that best matches with your goal.">Innovative Solutions</a>
+                  </div>
                   <span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
                 </div>
               </div>
               <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="box-default">
-                  <div class="box-default-title2">Strategic Thinking</div>
-                  <p class="box-default-description">Our SunTex Certified energy advisors strategically map out the best path to take, for not only your short term goals but also long term savings solutions.
-                    We have a saying we live by with our clients “Bandaids won’t heal sprain ankles”.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-target-2"></span>
+                  <div class="box-default-title2">
+                    <a tabindex="0" class="btn  btn-danger" style="font-weight: normal;" role="button" data-toggle="popover" data-trigger="focus" title="Strategic Thinking" data-content="Our SunTex Certified energy advisors strategically map out the best path to take, for not only your short term goals but also long term savings solutions.
+                    We have a saying we live by with our clients “Bandaids won’t heal sprain ankles”.">Strategic Thinking</a></div>
+                  <span class="box-default-icon novi-icon icon-lg mercury-icon-target-2"></span>
                 </div>
               </div>
               <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
                 <div class="box-default">
-                  <div class="box-default-title2">Experienced Team</div>
-                  <p class="box-default-description">We employ the best trained consultants that approaches your situation with the highest level of integrity.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-user"></span>
+                  <div class="box-default-title2">
+                    <a tabindex="0" class="btn  btn-danger" style="font-weight: normal;" role="button" data-toggle="popover" data-trigger="focus" title="Experienced Team" data-content="We employ the best trained consultants that approaches your situation with the highest level of integrity.">Experienced Team</a>
+                  </div><span class="box-default-icon novi-icon icon-lg mercury-icon-user"></span>
                 </div>
               </div>
               <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
                 <div class="box-default">
-                  <div class="box-default-title2">Creative Approach</div>
-                  <p class="box-default-description">After your first call with your advisor you will have a zoom meeting or in person meeting to review everything. Then, we facilitate everything through zoom to get you on your way to saving money! We handle everything on your behalf such as; HOA, City Permits, Utility Permits, Engineering, Site Surveys, Installation, monitoring and powered on.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-partners"></span>
+                  <div class="box-default-title2">
+                    <a tabindex="0" class="btn  btn-danger" style="font-weight: normal;" role="button" data-toggle="popover" data-trigger="focus" title="Creative Approach" data-content="After your first call with your advisor you will have a zoom meeting or in person meeting to review everything. Then, we facilitate everything through zoom to get you on your way to saving money! We handle everything on your behalf such as; HOA, City Permits, Utility Permits, Engineering, Site Surveys, Installation, monitoring and powered on.">Creative Approach</a>
+                  </div><span class="box-default-icon novi-icon icon-lg mercury-icon-partners"></span>
                 </div>
               </div>
             </div>
@@ -419,10 +423,16 @@
     </footer>
   </div>
   <div class="snackbars" id="form-output-global"></div>
+  <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="js/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/index.js"></script>
   <script>
+    $(function () {
+  $('[data-toggle="popover"]').popover()
+})
     var ctx = document.getElementById('myChart');
 
     const labels = ['1','2','3','4','5','6','7'];
