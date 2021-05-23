@@ -5648,7 +5648,7 @@ html [class*="section-"].section-bottom-0 {
 .bg-image-2 {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/images/fondoGrisDiseño.png);
+  background-image: url(/images/fondoGrisDise.png);
   background-position: center;
   /*background-color: #404044;*/
 }
@@ -6737,7 +6737,7 @@ html.tablet .ui-to-top {
   right: 0;
   z-index: 1090;
   /*background: #404044;*/
-  background-image: url("/images/fondoGrisDiseño.png");
+  background-image: url("/images/fondoGrisDise.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -7140,7 +7140,7 @@ html.tablet .ui-to-top {
   color: #9b9b9b;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
   background: #404044;
-  background-image: url(/images/fondoGrisDiseño.png);
+  background-image: url(/images/fondoGrisDise.png);
   background-repeat: no-repeat;
   background-position: center;
 }
