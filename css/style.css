@@ -29,6 +29,14 @@ video.fillWidth {
   background-position: center;
 }
 
+.fondoAhorro {
+  background-image: url("../images/fondoAhorro.png");
+  background-repeat: no-repeat;
+ background-size: 100%;
+ background-position: center;
+}
+
+
 .box-default-title2 {
   color: #ffffff;
   font-weight: 400;
