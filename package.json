@@ -1,0 +1,19 @@
+{
+  "name": "suntexpower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IP-M-HND/suntexpower.git"
+  },
+  "author": "ivan-pe¤a",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IP-M-HND/suntexpower/issues"
+  },
+  "homepage": "https://github.com/IP-M-HND/suntexpower#readme"
+}
