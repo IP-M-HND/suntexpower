@@ -2,351 +2,357 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-  <title>SUNTEX</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css"
-    href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
-  <link rel="stylesheet" href="css/bootstrap.css">
+    <title>SUNTEX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
-  <style>
-    .ie-panel {
-      display: none;
-      background: #212121;
-      padding: 10px 0;
-      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
-      clear: both;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-
-    html.ie-10 .ie-panel,
-    html.lt-ie-10 .ie-panel {
-      display: block;
-    }
-  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
-        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
-        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
-  </div>
-  <div class="preloader">
-    <div class="preloader-body">
-      <div class="cssload-container">
-        <div class="cssload-speeding-wheel"></div>
-      </div>
-      <p>Loading...</p>
+    <div class="ie-panel">
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
     </div>
-  </div>
-  <div class="page">
-    <header class="section page-header">
-      <!--RD Navbar-->
-      <div class="rd-navbar-wrap">
-        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
-          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
-          data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
-          data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
-          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-          <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
-            <span></span></div>
-          <div class="rd-navbar-aside-outer rd-navbar-collapse bg-gray-dark">
-            <div class="rd-navbar-aside">
-              <ul class="list-inline navbar-contact-list">
-                <li>
-                  <div class="unit unit-spacing-xs align-items-center">
-                    <div class="unit-left"><i class="fas fa-phone-square-alt"></i></div>
-                    <div class="unit-body"><a href="tel:#">+1 346 248 7799</a></div>
-                  </div>
-                </li>
-                <li>
-                  <div class="unit unit-spacing-xs align-items-center">
-                    <div class="unit-left"><i class="far fa-envelope"></i></div>
-                    <div class="unit-body"><a href="mailto:#">casey.suntexpower@gmail.com</a></div>
-                  </div>
-                </li>
-                <li>
-                  <div class="unit unit-spacing-xs align-items-center">
-                    <div class="unit-left"><i class="fas fa-map-marker-alt"></i></div>
-                    <div class="unit-body"><a href="#">US (Houston)</a></div>
-                  </div>
-                </li>
-              </ul>
-              <ul class="social-links"  style=" list-style:none">
-                <li><i class="fab fa-facebook"></i><a class="" target="_black" href="https://www.facebook.com/SunTexPower/"></a></li>
-                <li><i class="fab fa-instagram"></i><a class="" target="_black" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a></li>
-              </ul>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
             </div>
-          </div>
-          <div class="rd-navbar-main-outer">
-            <div class="rd-navbar-main">
-              <!--RD Navbar Panel-->
-              <div class="rd-navbar-panel">
-                <!--RD Navbar Toggle-->
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <!--RD Navbar Brand-->
-                <div class="rd-navbar-brand">
-                  <!--Brand--><a class="brand" href="index.html">
-                    <img class="brand-logo-dark d-block d-sm-block d-md-none"
-                      src="images/logo-default-200x34.png" alt="" style="width: 45px;" />
-                      <img
-                      class="brand-logo-dark d-none d-sm-none d-md-block" src="images/logo-default-200x34.png" alt="" style="width: 65px;"
-                     /></a>
-                </div>
-              </div>
-              <div class="rd-navbar-main-element">
-                <div class="rd-navbar-nav-wrap">
-                  <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#solar-Calculator">Solar (Calculator)</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="mission.html">Mission</a>
-                    </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="#">Energy Efficiency + More</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">FAQ</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!--Main section-->
-
-    <!--Pricing-->
-    <section class="section section-md bg-xs-overlay"
-      style="background:url('images/aerial-view-private-house-with-solar-panels-roof.jpg')no-repeat;background-size:cover">
-      <div class="container" style="margin-top: 6rem;">
-
-        <div class="card">
-          <div class="card-title">
-            <br>
-            <h3 class="wow fadeInLeft text-capitalize text-primary text-center" data-wow-delay=".3s">Find the perfect products</h3>
-
-          </div>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-3">
-                <h4>Products:</h4>
-              </div>
-              <div class="col-md-3">
-              </div>
-              <div class="col-md-3">
-                <h4>Saving on Consumption</h4>
-              </div>
-              <div class="col-md-3">
-                <h4>Aditional Benefits</h4>
-              </div>
-            </div>
-            <div class="row wow fadeInRight" data-wow-delay=".3s">
-              <div class="col-md-3">
-                <h4>Radiant Barrier</h4>
-                <p style="line-height: 20px;">ttacks the transfer of heat into your attic at the source! This form of Radiant Barrier is a double sided reflective insulation specifically designed to black radiant heat(97%) from transferring into your attic. You can see attic temperatures drop up to as high as 50%! It is also recommended to combine with attic fans for maximum results.
-                  The major benefits you can expect are: 10%-25% reduction in your kwh usage on average, extended HVAC life span, Level temperatures inside your home and most importantly pay less a month in electricity!</p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/products/radiantbarrier.jpg" width="" alt="">
-              </div>
-              <div class="col-md-3">
-                <h3>10%-20% <i class="fas fa-long-arrow-alt-down"></i></h3>
-              </div>
-              <div class="col-md-3">
-                  <ul>
-                    <li>Extend life of HVAC by 7-10 years</li>
-                    <li>Reduces overall consumption</li>
-                    <li>Reduces the amount of Solar panels needed</li>
-                    <li>Level out temperatures throughout home</li>
-                    <li>Home value increase</li>
-                    <li>Disclaimer: Savings percentages may vary depending on attic coverage throughout the home or from home being a 1 story or 2 story. 2 story homes typically will have savings reduced percentages reduced due to attic coverage.</li>
-                  </ul>
-              </div>
-            </div>
-            <hr>
-            <div class="row wow fadeInRight" data-wow-delay=".3s">
-              <div class="col-md-3">
-                <h4>HVAC Replacement</h4>
-                <p style="line-height: 20px;">Stands for heating, ventilation, and air conditioning. An HVAC system is designed to control the environment in which it works. It achieves this by controlling the temperature of a room through heating and cooling. It also controls the humidity level in that environment by controlling the movement and distribution of air inside the room. HVAC typically should be replaced in Texas every 10-12 years. Keeping your A/C’s longer is only going to result in higher electricity bills due to an inefficient HVAC system to cool/heat your home properly. Meaning it is staying on longer than it should to get to your desired comfort.
-                  Replacing you A/c system you can see a reduction in your yearly consumption from 15%-30%!</p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/products/radiantbarrier.jpg" width="" alt="">
-              </div>
-              <div class="col-md-3">
-                <h3>15%-20% <i class="fas fa-long-arrow-alt-down"></i></h3>
-              </div>
-              <div class="col-md-3">
-                  <ul>
-                    <li>Massive reduction in overall consumption</li>
-                    <li>In-home temperatures met more comfortably</li>
-                    <li>Reduces the amount of Solar panels needed</li>
-                    <li>Level out temperatures throughout home</li>
-                    <li>Home Value increase</li>
-                    <li>Disclaimer- Hvac replacement savings vary to the age of your current system that is being replaced. Savings will also vary if replacing only one unit from a home that has multiple HVAC units. Savings will vary depending on the efficiency of the unit used. The savings percentage above is conservative annual savings based upon using a 14 Seer HVAC unit replacement.</li>
-                  </ul>
-              </div>
-            </div>
-            <hr>
-            <div class="row wow fadeInRight" data-wow-delay=".3s">
-              <div class="col-md-3">
-                <h4>BLOWN-IN INSULATION</h4>
-                <p style="line-height: 20px;">Is the last line of defense to prevent the radiant heat from coming into your home! The higher the R-Value, the better the thermal performance of the insulation. The recommended level for most attics is to insulate to R-38 or about 10 to 14 inches, depending on insulation type. It will make your home a more comfortable place to be in summer and winter, decrease the cost of your energy bills, and increase the value of your home.</p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/products/BLOWN-IN.jpg" width="" alt="">
-              </div>
-              <div class="col-md-3">
-                <h3>5%-10% <i class="fas fa-long-arrow-alt-down"></i></h3>
-              </div>
-              <div class="col-md-3">
-                  <ul>
-                    <li>Better in-home temperatures</li>
-                    <li>Reduces overall consumption</li>
-                    <li>Extends life of HVAC </li>
-                    <li>Disclaimer: Savings percentages vary depending on attic coverage of the home and the condition of current insulation. Savings may vary depending on the home being a 1 story of 2 story house.</li>
-                  </ul>
-              </div>
-            </div>
-            <hr>
-            <div class="row wow fadeInRight" data-wow-delay=".3s">
-              <div class="col-md-3">
-                <h4>SOLAR ATTIC FAN</h4>
-                <p style="line-height: 20px;">Is a great Proactive approach to ventilate heat from inside your attic. Highly recommended when pairing it with Radiant Barrier!</p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/products/SOLAR-ATTIC-FAN.jpg" width="" alt="">
-              </div>
-              <div class="col-md-3">
-                <h3>3% <i class="fas fa-long-arrow-alt-down"></i></h3>
-              </div>
-              <div class="col-md-3">
-                  <ul>
-                    <li>Extend life of HVAC minimal</li>
-                    <li>Lower attic temps</li>
-                    <li>Reduces overall consumption </li>
-                    <li>Disclaimer- savings will vary or deplete if home already has pro-active ventilation system installed.</li>
-                  </ul>
-              </div>
-            </div>
-            <hr>
-            <div class="row wow fadeInRight" data-wow-delay=".3s">
-              <div class="col-md-3">
-                <h4>Roof</h4>
-                <p style="line-height: 20px;">Slate, copper and tile roofs can last more than 50 years. Homeowners with fiber cement shingles last about 25 years and asphalt shingle/composition roofs last about 20 years, the NAHB found. It is ideal to do a roof replacement with Solar to avoid out of pocket expenses and get the Solar 26% tax credit benefit on the roof as well.</p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/products/SOLAR-ATTIC-FAN.jpg" width="" alt="">
-              </div>
-              <div class="col-md-3">
-               
-              </div>
-              <div class="col-md-3">
-
-              </div>
-            </div>
-          </div>
+            <p>Loading...</p>
         </div>
-      </div>
-    </section>
+    </div>
+    <div class="page">
+        <header class="section page-header">
+            <!--RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static"
+                    data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+                        <span></span></div>
+                    <div class="rd-navbar-aside-outer rd-navbar-collapse bg-gray-dark">
+                        <div class="rd-navbar-aside">
+                            <ul class="list-inline navbar-contact-list">
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><i class="fas fa-phone-square-alt"></i></div>
+                                        <div class="unit-body"><a href="tel:#">+1 346 248 7799</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><i class="far fa-envelope"></i></div>
+                                        <div class="unit-body"><a href="mailto:#">casey.suntexpower@gmail.com</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="unit-body"><a href="#">US (Houston)</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="social-links" style=" list-style:none">
+                                <li><i class="fab fa-facebook"></i>
+                                    <a class="" target="_black" href="https://www.facebook.com/SunTexPower/"></a>
+                                </li>
+                                <li><i class="fab fa-instagram"></i>
+                                    <a class="" target="_black" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!--RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!--RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!--RD Navbar Brand-->
+                                <div class="rd-navbar-brand">
+                                    <!--Brand-->
+                                    <a class="brand" href="index.html">
+                                        <img class="brand-logo-dark d-block d-sm-block d-md-none" src="images/logo-default-200x34.png" alt="" style="width: 45px;" />
+                                        <img class="brand-logo-dark d-none d-sm-none d-md-block" src="images/logo-default-200x34.png" alt="" style="width: 65px;" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#solar-Calculator">Solar (Calculator)</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="mission.html">Mission</a>
+                                        </li>
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="#">Energy Efficiency + More</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--Main section-->
+
+        <!--Pricing-->
+        <section class="section section-md bg-xs-overlay" style="background:url('images/aerial-view-private-house-with-solar-panels-roof.jpg')no-repeat;background-size:cover">
+            <div class="container" style="margin-top: 6rem;">
+
+                <div class="card">
+                    <div class="card-title">
+                        <br>
+                        <h3 class="wow fadeInLeft text-capitalize text-primary text-center" data-wow-delay=".3s">Find the perfect products</h3>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>Products:</h4>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Saving on Consumption</h4>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Aditional Benefits</h4>
+                            </div>
+                        </div>
+                        <div class="row wow fadeInRight" data-wow-delay=".3s">
+                            <div class="col-md-3">
+                                <h4>Radiant Barrier</h4>
+                                <p style="line-height: 20px;">ttacks the transfer of heat into your attic at the source! This form of Radiant Barrier is a double sided reflective insulation specifically designed to black radiant heat(97%) from transferring into your attic. You can
+                                    see attic temperatures drop up to as high as 50%! It is also recommended to combine with attic fans for maximum results. The major benefits you can expect are: 10%-25% reduction in your kwh usage on average, extended
+                                    HVAC life span, Level temperatures inside your home and most importantly pay less a month in electricity!</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="images/products/radiantbarrier.jpg" width="" alt="">
+                            </div>
+                            <div class="col-md-3">
+                                <h3>10%-20% <i class="fas fa-long-arrow-alt-down"></i></h3>
+                            </div>
+                            <div class="col-md-3">
+                                <ul>
+                                    <li>Extend life of HVAC by 7-10 years</li>
+                                    <li>Reduces overall consumption</li>
+                                    <li>Reduces the amount of Solar panels needed</li>
+                                    <li>Level out temperatures throughout home</li>
+                                    <li>Home value increase</li>
+                                    <li>Disclaimer: Savings percentages may vary depending on attic coverage throughout the home or from home being a 1 story or 2 story. 2 story homes typically will have savings reduced percentages reduced due to attic coverage.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row wow fadeInRight" data-wow-delay=".3s">
+                            <div class="col-md-3">
+                                <h4>HVAC Replacement</h4>
+                                <p style="line-height: 20px;">Stands for heating, ventilation, and air conditioning. An HVAC system is designed to control the environment in which it works. It achieves this by controlling the temperature of a room through heating and cooling. It also
+                                    controls the humidity level in that environment by controlling the movement and distribution of air inside the room. HVAC typically should be replaced in Texas every 10-12 years. Keeping your A/C’s longer is only going
+                                    to result in higher electricity bills due to an inefficient HVAC system to cool/heat your home properly. Meaning it is staying on longer than it should to get to your desired comfort. Replacing you A/c system you can
+                                    see a reduction in your yearly consumption from 15%-30%!</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="images/products/radiantbarrier.jpg" width="" alt="">
+                            </div>
+                            <div class="col-md-3">
+                                <h3>15%-20% <i class="fas fa-long-arrow-alt-down"></i></h3>
+                            </div>
+                            <div class="col-md-3">
+                                <ul>
+                                    <li>Massive reduction in overall consumption</li>
+                                    <li>In-home temperatures met more comfortably</li>
+                                    <li>Reduces the amount of Solar panels needed</li>
+                                    <li>Level out temperatures throughout home</li>
+                                    <li>Home Value increase</li>
+                                    <li>Disclaimer- Hvac replacement savings vary to the age of your current system that is being replaced. Savings will also vary if replacing only one unit from a home that has multiple HVAC units. Savings will vary depending
+                                        on the efficiency of the unit used. The savings percentage above is conservative annual savings based upon using a 14 Seer HVAC unit replacement.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row wow fadeInRight" data-wow-delay=".3s">
+                            <div class="col-md-3">
+                                <h4>BLOWN-IN INSULATION</h4>
+                                <p style="line-height: 20px;">Is the last line of defense to prevent the radiant heat from coming into your home! The higher the R-Value, the better the thermal performance of the insulation. The recommended level for most attics is to insulate to R-38
+                                    or about 10 to 14 inches, depending on insulation type. It will make your home a more comfortable place to be in summer and winter, decrease the cost of your energy bills, and increase the value of your home.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="images/products/BLOWN-IN.jpg" width="" alt="">
+                            </div>
+                            <div class="col-md-3">
+                                <h3>5%-10% <i class="fas fa-long-arrow-alt-down"></i></h3>
+                            </div>
+                            <div class="col-md-3">
+                                <ul>
+                                    <li>Better in-home temperatures</li>
+                                    <li>Reduces overall consumption</li>
+                                    <li>Extends life of HVAC </li>
+                                    <li>Disclaimer: Savings percentages vary depending on attic coverage of the home and the condition of current insulation. Savings may vary depending on the home being a 1 story of 2 story house.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row wow fadeInRight" data-wow-delay=".3s">
+                            <div class="col-md-3">
+                                <h4>SOLAR ATTIC FAN</h4>
+                                <p style="line-height: 20px;">Is a great Proactive approach to ventilate heat from inside your attic. Highly recommended when pairing it with Radiant Barrier!</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="images/products/SOLAR-ATTIC-FAN.jpg" width="" alt="">
+                            </div>
+                            <div class="col-md-3">
+                                <h3>3% <i class="fas fa-long-arrow-alt-down"></i></h3>
+                            </div>
+                            <div class="col-md-3">
+                                <ul>
+                                    <li>Extend life of HVAC minimal</li>
+                                    <li>Lower attic temps</li>
+                                    <li>Reduces overall consumption </li>
+                                    <li>Disclaimer- savings will vary or deplete if home already has pro-active ventilation system installed.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row wow fadeInRight" data-wow-delay=".3s">
+                            <div class="col-md-3">
+                                <h4>Roof</h4>
+                                <p style="line-height: 20px;">Slate, copper and tile roofs can last more than 50 years. Homeowners with fiber cement shingles last about 25 years and asphalt shingle/composition roofs last about 20 years, the NAHB found. It is ideal to do a roof replacement
+                                    with Solar to avoid out of pocket expenses and get the Solar 26% tax credit benefit on the roof as well.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="images/products/SOLAR-ATTIC-FAN.jpg" width="" alt="">
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-    <!--Footer-->
-    <footer class="section footer-classic section-sm">
-      <div class="container">
-        <div class="row row-30">
-          <div class="col-lg-3 col-sm-8 wow fadeInUp">
-            <P class="footer-classic-title">contact info</P>
-            <div class="d-block offset-top-0">US (Houston)</span></div>
-            <a class="d-inline-block accent-link" href="mailto:#"> casey.suntexpower@gmail.com
+        <!--Footer-->
+        <footer class="section footer-classic section-sm">
+            <div class="container">
+                <div class="row row-30">
+                    <div class="col-lg-3 col-sm-8 wow fadeInUp">
+                        <P class="footer-classic-title">contact info</P>
+                        <div class="d-block offset-top-0">US (Houston)</span>
+                        </div>
+                        <a class="d-inline-block accent-link" href="mailto:#"> casey.suntexpower@gmail.com
             </a><a class="d-inline-block" href="tel:#">+1 346 248 7799</a>
-          </div>
-          <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
-            <P class="footer-classic-title">Quick Links</P>
-            <ul class="footer-classic-nav-list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
-            <P class="footer-classic-title">newsletter</P>
-            <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global"
-              data-form-type="contact" method="post" action="bat/rd-mailform.php">
-              <div class="form-wrap">
-                <label class="form-label" for="subscribe-email">Your Email Address</label>
-                <input class="form-input" id="subscribe-email" type="email" name="email"
-                  data-constraints="@Email @Required">
-              </div>
-              <div class="form-button group-sm text-center text-lg-left">
-                <button class="button button-primary button-circle" type="submit">sign up</button>
-              </div>
-            </form>
-            <p>Be the first to find out about our latest news, updates, and special offers.</p>
-          </div>
-        </div>
-      </div>
-      <div class="container wow fadeInUp" data-wow-delay=".4s">
-        <div class="footer-classic-aside">
-          <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved.</a></p>
-          <ul class="social-links" style=" list-style:none">
-            <li><i class="fab fa-facebook"></i><a class="" href="https://www.facebook.com/SunTexPower/"></a></li>
-            <li><i class="fab fa-instagram"></i><a class="" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <div class="snackbars" id="form-output-global"></div>
-  <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-  <script src="js/core.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/index.js"></script>
-  <script>
-    $(function () {
-  $('[data-toggle="popover"]').popover()
-})
-    var ctx = document.getElementById('myChart');
+                    </div>
+                    <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
+                        <P class="footer-classic-title">Quick Links</P>
+                        <ul class="footer-classic-nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+                        <P class="footer-classic-title">newsletter</P>
+                        <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                            <div class="form-wrap">
+                                <label class="form-label" for="subscribe-email">Your Email Address</label>
+                                <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
+                            </div>
+                            <div class="form-button group-sm text-center text-lg-left">
+                                <button class="button button-primary button-circle" type="submit">sign up</button>
+                            </div>
+                        </form>
+                        <p>Be the first to find out about our latest news, updates, and special offers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container wow fadeInUp" data-wow-delay=".4s">
+                <div class="footer-classic-aside">
+                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved.</a>
+                    </p>
+                    <ul class="social-links" style=" list-style:none">
+                        <li><i class="fab fa-facebook"></i>
+                            <a class="" href="https://www.facebook.com/SunTexPower/"></a>
+                        </li>
+                        <li><i class="fab fa-instagram"></i>
+                            <a class="" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+        var ctx = document.getElementById('myChart');
 
-    const labels = ['1','2','3','4','5','6','7'];
-    const data = {
-      labels: labels,
-      datasets: [{
-        label: 'Solar Energy',
-        data: [10, 20, 10, 20, 10, 20, 10],
-        fill: true,
-        borderColor: 'rgb(236, 145, 34)',
-        tension: 0.1
-      },
-      {
-        label: 'Normal Energy',
-        data: [40, 60, 70, 80, 90, 100, 110],
-        fill: true,
-        borderColor: 'rgb(77, 149, 248)',
-        tension: 0.1
-      }]
-    };
+        const labels = ['1', '2', '3', '4', '5', '6', '7'];
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Solar Energy',
+                data: [10, 20, 10, 20, 10, 20, 10],
+                fill: true,
+                borderColor: 'rgb(236, 145, 34)',
+                tension: 0.1
+            }, {
+                label: 'Normal Energy',
+                data: [40, 60, 70, 80, 90, 100, 110],
+                fill: true,
+                borderColor: 'rgb(77, 149, 248)',
+                tension: 0.1
+            }]
+        };
 
-    var myChart = new Chart(ctx, {
-      type: 'line',
-  data: data,
-    });
-    </script> 
-  <!--coded by Drel-->
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+        });
+    </script>
+    <!--coded by Drel-->
 </body>
 
 </html>

@@ -370,8 +370,9 @@
                                 </div>
                                 <div class="col-12 text-center">
                                     Solar System Size needed
-                                    <div class="alert alert-primary" id="sssn" style="margin-right: auto;margin-left: auto;max-width: 300px;" role="alert">
-                                        0 kws
+                                    <div class="alert alert-primary" style="margin-right: auto;margin-left: auto;max-width: 300px;" role="alert">
+                                        Panels <span id="panels">0 </span><i class="fas fa-solar-panel"></i><br>
+                                        <span id="sssn">0 kw</span>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
@@ -458,6 +459,7 @@
             var totalBill = 0;
             var totalConsum = 0;
             var sssn = 0;
+            var panels = 0;
             var rate = 0.14;
             var capacity = 34.5;
             var years = 20;
@@ -482,18 +484,22 @@
                 if (totalBill > 0) {
                     kws = parseFloat(totalBill) / parseFloat(rate);
                     totalConsum = kws;
+                    panels = (kws / capacity);
+                    panels = panels.toFixed();
                     sssn = (kws / capacity) * 340;
-                    sssn = sssn.toFixed(4);
+                    sssn = sssn.toFixed();
                 } else {
                     sssn = 0;
-                    document.getElementById('sssn').innerHTML = sssn + ' kws';
+                    document.getElementById('sssn').innerHTML = sssn + ' kw';
                     document.getElementById('totalConsum').value = 0;
+                    document.getElementById('panels').innerHTML = '0 ';
                     document.getElementById('totalSaving').innerHTML = '$0.00'
                     ctx.setAttribute('style', 'display:none;max-height: 300px;');
                     return 0;
                 }
-                totalConsum = totalConsum.toFixed(4);
-                document.getElementById('sssn').innerHTML = sssn + ' kws';
+                totalConsum = totalConsum.toFixed();
+                document.getElementById('sssn').innerHTML = sssn + ' kw';
+                document.getElementById('panels').innerHTML = panels + ' ';
                 document.getElementById('totalConsum').value = totalConsum;
 
                 let labels = Array();
@@ -501,8 +507,7 @@
                 let normal = Array();
                 let valorEnergiNormal = 0;
                 valorEnergiNormal = totalBill * 12;
-                console.log(totalBill);
-                console.log(valorEnergiNormal);
+
                 let totalEnergyNormal = 0;
                 let totalEnergySolar = 0;
                 let priceYear = 1332;
@@ -522,7 +527,7 @@
                     valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
                 }
                 totalSaving = totalEnergyNormal - totalEnergySolar;
-                totalSaving = totalSaving.toFixed(2);
+                totalSaving = totalSaving.toFixed(0);
                 var formatter = new Intl.NumberFormat('en-US', {
                     style: 'currency',
                     currency: 'USD',
@@ -551,6 +556,35 @@
                 myChart = new Chart(ctx, {
                     type: 'line',
                     data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: false,
+                                text: ''
+                            },
+                        },
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        scales: {
+                            x: {
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Years'
+                                }
+                            },
+                            y: {
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Monthly payments'
+                                }
+                            }
+                        }
+                    },
                 });
 
             }
@@ -565,18 +599,23 @@
                 if (this.totalConsum > 0) {
                     kws = this.totalConsum;
                     this.totalBill = parseFloat(this.totalConsum) * this.rate;
+                    panels = (kws / this.capacity);
+                    panels = panels.toFixed();
                     this.sssn = (kws / this.capacity) * 340;
+                    this.sssn = sssn.toFixed();
                 } else {
                     sssn = 0;
                     this.totalBill = 0;
-                    document.getElementById('sssn').innerHTML = sssn + ' kws';
+                    document.getElementById('sssn').innerHTML = sssn + ' kw';
                     document.getElementById('totalBill').value = 0;
+                    document.getElementById('panels').innerHTML = '0 ';
                     document.getElementById('totalSaving').innerHTML = '$0.00';
                     ctx.setAttribute('style', 'display:none;max-height: 300px;');
                     return 0;
                 }
-                document.getElementById('sssn').innerHTML = sssn + ' kws';
-                document.getElementById('totalBill').value = totalBill;
+                document.getElementById('sssn').innerHTML = sssn + ' kw';
+                document.getElementById('panels').innerHTML = panels + ' ';
+                document.getElementById('totalBill').value = totalBill.toFixed(2);
 
                 let labels = Array();
                 let solar = Array();
@@ -604,7 +643,7 @@
                     valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
                 }
                 totalSaving = totalEnergyNormal - totalEnergySolar;
-                totalSaving = totalSaving.toFixed(2);
+                totalSaving = totalSaving.toFixed(0);
                 var formatter = new Intl.NumberFormat('en-US', {
                     style: 'currency',
                     currency: 'USD',
@@ -633,6 +672,35 @@
                 myChart = new Chart(ctx, {
                     type: 'line',
                     data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: false,
+                                text: ''
+                            },
+                        },
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        scales: {
+                            x: {
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Years'
+                                }
+                            },
+                            y: {
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Monthly payments'
+                                }
+                            }
+                        }
+                    },
                 });
             }
         </script>
