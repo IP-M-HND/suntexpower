@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>SUNTEX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ie-panel">
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+    </div>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    <div class="page">
+        <header class="section page-header">
+            <!--RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static"
+                    data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+                        <span></span></div>
+                    <div class="rd-navbar-aside-outer rd-navbar-collapse bg-gray-dark">
+                        <div class="rd-navbar-aside">
+                            <ul class="list-inline navbar-contact-list">
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><i class="fas fa-phone-square-alt"></i></div>
+                                        <div class="unit-body"><a href="tel:#">+1 346 248 7799</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><i class="far fa-envelope"></i></div>
+                                        <div class="unit-body"><a href="mailto:#">casey.suntexpower@gmail.com</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="unit-body"><a href="#">US (Houston)</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="social-links" style=" list-style:none">
+                                <li><i class="fab fa-facebook"></i>
+                                    <a class="" target="_black" href="https://www.facebook.com/SunTexPower/"></a>
+                                </li>
+                                <li><i class="fab fa-instagram"></i>
+                                    <a class="" target="_black" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!--RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!--RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!--RD Navbar Brand-->
+                                <div class="rd-navbar-brand">
+                                    <!--Brand-->
+                                    <a class="brand" href="index.html">
+                                        <img class="brand-logo-dark d-block d-sm-block d-md-none" src="images/logo-default-200x34.png" alt="" style="width: 45px;" />
+                                        <img class="brand-logo-dark d-none d-sm-none d-md-block" src="images/logo-default-200x34.png" alt="" style="width: 65px;" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="#solar-Calculator">Solar (Calculator)</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="mission.html">Mission</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="products.html">Energy Efficiency + More</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="section section-md bg-gray-lighten" id="solar-Calculator" style="background-image: url(images/5172661.jpg);background-repeat: no-repeat;background-position: center;">
+            <div style="margin-top: 150px;" class="d-none d-sm-none d-md-block"></div>
+            <div class="container" style="margin-top: 5px;">
+                <div class="card" style="background:url('images/4850037.jpg')no-repeat;background-size:cover">
+                    <div class="card-body" style="padding-top: 0;">
+                        <div class="section-name wow fadeInRight text-center" style="margin-left: auto;margin-right: auto;max-width: 600px;margin-top: -35px;    background: #04AA6D;border-radius: 15px 15px 0px 0px;" data-wow-delay=".2s">
+                            <h3 style="color: #FFF;text-shadow: 1px 1px 1px rgb(36, 36, 37);">SOLAR (CALCULATOR)</h3>
+                        </div>
+                        <br>
+                        <div id="app">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" onclick="changeYear(20)" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          20 years .99%
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" onclick="changeYear(25)" id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                          25 years 1.99%
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <label for="">Enter the avg monthly bill</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">$</span>
+                                        </div>
+                                        <input type="number" class="form-control" id="totalBill" onchange="totalToBill()" onkeyup="totalToBill()" value="0" aria-label="Amount (to the nearest dollar)">
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-12 text-center">
+                                    <h4>OR</h4>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <label for="">Enter the avg monthly consumption</label>
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" id="totalConsum" value="0" onchange="totalToConsum()" onkeyup="totalToConsum()">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">kwhs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <span>% Bill</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioPorcentage" onclick="changePercent(0.5)" id="radioPorcentage" value="option1">
+                                        <label class="form-check-label" for="radioPorcentage">
+                                          50%
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioPorcentage" onclick="changePercent(1)" id="radioPorcentage2" value="option2" checked>
+                                        <label class="form-check-label" for="radioPorcentage2">
+                                          100%
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    Solar System Size needed
+                                    <div class="alert alert-primary h4" style="margin-right: auto;margin-left: auto;max-width: 300px;    background: rgb(6,135,42);
+                                    background: radial-gradient(circle, rgba(6,135,42,1) 0%, rgba(4,95,29,1) 47%, rgba(4,107,33,1) 100%);
+                                    color: #FFF;
+                                    box-shadow: -5px 9px 5px 0px rgb(0 0 0 / 70%);
+                                    -webkit-box-shadow: -5px 9px 5px 0px rgb(0 0 0 / 70%);
+                                    -moz-box-shadow: -5px 9px 5px 0px rgba(0,0,0,0.7);" role="alert">
+                                        YOU NEED <br><span id="panels">0 </span> PANELS <i class="fas fa-solar-panel"></i>
+                                        <span style="display: none;" id="sssn">0 kw</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+
+                                    <div class="alert alert-success" style="line-height: normal;min-height: 115px;padding-left: 5px;margin-right: auto;margin-left: auto;max-width: 320px;background:url('images/rectangulo_saving.png')no-repeat;background-size:cover" role="alert">
+                                        <h3 id="totalSaving" style="color: #FFF;font-weight: bold;">$ 0.00</h3>
+                                        <span>Total savings</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <canvas id="myChart" style="max-height: 300px;" width="400" height="400"></canvas>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--Footer-->
+        <footer class="section footer-classic section-sm">
+            <div class="container">
+                <div class="row row-30">
+                    <div class="col-lg-3 col-sm-8 wow fadeInUp">
+                        <P class="footer-classic-title">contact info</P>
+                        <div class="d-block offset-top-0">US (Houston)</span>
+                        </div>
+                        <a class="d-inline-block accent-link" href="mailto:#"> casey.suntexpower@gmail.com
+            </a><a class="d-inline-block" href="tel:#">+1 346 248 7799</a>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
+                        <P class="footer-classic-title">Quick Links</P>
+                        <ul class="footer-classic-nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+                        <P class="footer-classic-title">newsletter</P>
+                        <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                            <div class="form-wrap">
+                                <label class="form-label" for="subscribe-email">Your Email Address</label>
+                                <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
+                            </div>
+                            <div class="form-button group-sm text-center text-lg-left">
+                                <button class="button button-primary button-circle" type="submit">sign up</button>
+                            </div>
+                        </form>
+                        <p>Be the first to find out about our latest news, updates, and special offers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container wow fadeInUp" data-wow-delay=".4s">
+                <div class="footer-classic-aside">
+                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved.</a>
+                    </p>
+                    <ul class="social-links" style=" list-style:none">
+                        <li><i class="fab fa-facebook"></i>
+                            <a class="" href="https://www.facebook.com/SunTexPower/"></a>
+                        </li>
+                        <li><i class="fab fa-instagram"></i>
+                            <a class="" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <div class="snackbars" id="form-output-global"></div>
+        <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="js/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <script src="js/core.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            $(function() {
+                $('[data-toggle="popover"]').popover()
+            });
+
+            var ctx = document.getElementById('myChart');
+            var myChart = null;
+            var totalBill = 0;
+            var totalConsum = 0;
+            var sssn = 0;
+            var panels = 0;
+            var rate = 0.14;
+            var capacity = 34.5;
+            var years = 20;
+            var percent = 1;
+            ctx.setAttribute('style', 'display:none');
+
+            function changeYear(years_) {
+                years = years_;
+                document.getElementById('sssn').innerHTML = 0 + ' kws';
+                document.getElementById('totalBill').value = 0;
+                document.getElementById('totalConsum').value = 0;
+                document.getElementById('totalSaving').innerHTML = '$0.00';
+                document.getElementById('panels').innerHTML = '0 ';
+                ctx.setAttribute('style', 'display:none;max-height: 300px;');
+            }
+
+            function changePercent(percent_) {
+                this.percent = percent_;
+                document.getElementById('sssn').innerHTML = 0 + ' kws';
+                document.getElementById('totalBill').value = 0;
+                document.getElementById('totalConsum').value = 0;
+                document.getElementById('totalSaving').innerHTML = '$0.00';
+                document.getElementById('panels').innerHTML = '0 ';
+                ctx.setAttribute('style', 'display:none;max-height: 300px;');
+            }
+
+            function totalToBill() {
+                totalConsum = 0;
+                tmpTotalBill = document.getElementById('totalBill').value;
+                if (tmpTotalBill != null) {
+                    totalBill = parseFloat(tmpTotalBill);
+                }
+                totalBill = totalBill * percent;
+                let kws = 0;
+                if (totalBill > 0) {
+                    kws = parseFloat(totalBill) / parseFloat(rate);
+                    totalConsum = kws;
+                    panels = (kws / capacity);
+                    panels = panels.toFixed();
+                    sssn = (kws / capacity) * 340;
+                    sssn = sssn.toFixed();
+                } else {
+                    sssn = 0;
+                    document.getElementById('sssn').innerHTML = sssn + ' kw';
+                    document.getElementById('totalConsum').value = 0;
+                    document.getElementById('panels').innerHTML = '0 ';
+                    document.getElementById('totalSaving').innerHTML = '$0.00'
+                    ctx.setAttribute('style', 'display:none;max-height: 300px;');
+                    return 0;
+                }
+                totalConsum = totalConsum.toFixed();
+                document.getElementById('sssn').innerHTML = sssn + ' kw';
+                document.getElementById('panels').innerHTML = panels + ' ';
+                document.getElementById('totalConsum').value = totalConsum;
+
+                let labels = Array();
+                let solar = Array();
+                let normal = Array();
+                let valorEnergiNormal = 0;
+                valorEnergiNormal = totalBill * 12;
+
+                let totalEnergyNormal = 0;
+                let totalEnergySolar = 0;
+                let priceYear = 1488;
+                if (years > 20) {
+                    priceYear = 1332;
+                }
+
+                for (var i = 1; i <= 30; i++) {
+                    labels.push(i + '');
+                    if (i <= years) {
+                        solar.push(priceYear);
+                    } else {
+                        solar.push(0);
+                    }
+                    totalEnergyNormal += valorEnergiNormal;
+                    totalEnergySolar += priceYear;
+                    normal.push(valorEnergiNormal);
+                    valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
+                }
+                totalSaving = totalEnergyNormal - totalEnergySolar;
+                totalSaving = totalSaving.toFixed(0);
+                var formatter = new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                });
+                document.getElementById('totalSaving').innerHTML = formatter.format(totalSaving);
+                const data = {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Solar Payment',
+                        data: solar,
+                        fill: true,
+                        borderColor: 'rgb(4, 170, 109)',
+                        tension: 0.1
+                    }, {
+                        label: 'Utility Bill',
+                        data: normal,
+                        fill: true,
+                        borderColor: 'rgb(77, 149, 248)',
+                        tension: 0.1
+                    }]
+                };
+                if (myChart != null) {
+                    myChart.destroy();
+                }
+                ctx.setAttribute('style', 'display:inline;max-height: 300px;');
+                myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: false,
+                                text: ''
+                            },
+                        },
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        scales: {
+                            x: {
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Years'
+                                }
+                            },
+                            y: {
+                                ticks: {
+                                    // Include a dollar sign in the ticks
+                                    callback: function(value, index, values) {
+                                        return '$' + value;
+                                    }
+                                },
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Monthly payments'
+                                }
+                            }
+                        }
+                    },
+                });
+
+            }
+
+            function totalToConsum() {
+                this.totalBill = 0;
+                var tmpTotalConsum = document.getElementById('totalConsum').value;
+                if (tmpTotalConsum != null) {
+                    totalConsum = parseFloat(tmpTotalConsum);
+                }
+                let kws = 0;
+                if (this.totalConsum > 0) {
+                    kws = this.totalConsum;
+                    this.totalBill = parseFloat(this.totalConsum) * this.rate;
+                    this.totalBill = totalBill * percent;
+                    panels = (kws / this.capacity);
+                    panels = panels.toFixed();
+                    this.sssn = (kws / this.capacity) * 340;
+                    this.sssn = sssn.toFixed();
+                } else {
+                    sssn = 0;
+                    this.totalBill = 0;
+                    document.getElementById('sssn').innerHTML = sssn + ' kw';
+                    document.getElementById('totalBill').value = 0;
+                    document.getElementById('panels').innerHTML = '0 ';
+                    document.getElementById('totalSaving').innerHTML = '$0.00';
+                    ctx.setAttribute('style', 'display:none;max-height: 300px;');
+                    return 0;
+                }
+                document.getElementById('sssn').innerHTML = sssn + ' kw';
+                document.getElementById('panels').innerHTML = panels + ' ';
+                document.getElementById('totalBill').value = totalBill.toFixed(2);
+
+                let labels = Array();
+                let solar = Array();
+                let normal = Array();
+                let valorEnergiNormal = 0;
+                valorEnergiNormal = totalBill * 12;
+                console.log(totalBill);
+                console.log(valorEnergiNormal);
+                let totalEnergyNormal = 0;
+                let totalEnergySolar = 0;
+                let priceYear = 1488;
+                if (years > 20) {
+                    priceYear = 1332;
+                }
+                for (var i = 1; i <= 30; i++) {
+                    labels.push(i + '');
+                    if (i <= years) {
+                        solar.push(priceYear);
+                    } else {
+                        solar.push(0);
+                    }
+                    totalEnergyNormal += valorEnergiNormal;
+                    totalEnergySolar += priceYear;
+                    normal.push(valorEnergiNormal);
+                    valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
+                }
+                totalSaving = totalEnergyNormal - totalEnergySolar;
+                totalSaving = totalSaving.toFixed(0);
+                var formatter = new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                });
+                document.getElementById('totalSaving').innerHTML = formatter.format(totalSaving);
+                const data = {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Solar Payment',
+                        data: solar,
+                        fill: true,
+                        borderColor: 'rgb(4, 170, 109)',
+                        tension: 0.1
+                    }, {
+                        label: 'Utility Bill',
+                        data: normal,
+                        fill: true,
+                        borderColor: 'rgb(77, 149, 248)',
+                        tension: 0.1
+                    }]
+                };
+                if (myChart != null) {
+                    myChart.destroy();
+                }
+                ctx.setAttribute('style', 'display:inline;max-height: 300px;');
+                myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: false,
+                                text: ''
+                            },
+                        },
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        scales: {
+                            x: {
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Years'
+                                }
+                            },
+                            y: {
+
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Monthly payments'
+                                }
+                            }
+                        }
+                    },
+                });
+            }
+        </script>
+
+        <!--coded by Drel-->
+</body>
+
+</html>

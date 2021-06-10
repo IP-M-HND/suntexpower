@@ -104,7 +104,7 @@
                                     <ul class="rd-navbar-nav">
                                         <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#solar-Calculator">Solar (Calculator)</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="solar-calculator.html">Solar (Calculator)</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="mission.html">Mission</a>
                                         </li>
@@ -230,7 +230,7 @@
                         <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Why<span class="text-primary"> Choose us</span></h3>
                         <p>With over 20 years of experience in business consulting, we have a lot to offer to our clients. Here are some reasons why companies worldwide choose us.</p>
                         <p>
-                            Here are some re5asons why companies and residential homeowner choose us.
+                            Here are some reasons why companies and residential homeowner choose us.
                         </p>
                         <div class="row row-15">
                             <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
@@ -323,74 +323,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-md bg-gray-lighten" id="solar-Calculator">
-            <div class="container">
-                <div class="card" style="background:url('images/4850037.jpg')no-repeat;background-size:cover">
-                    <div class="card-body" style="padding-top: 0;">
-                        <div class="section-name wow fadeInRight text-center" style="margin-left: auto;margin-right: auto;max-width: 600px;margin-top: -35px;    background: #04AA6D;border-radius: 15px 15px 0px 0px;" data-wow-delay=".2s">
-                            <h3 style="color: #FFF;text-shadow: 1px 1px 1px rgb(36, 36, 37);">SOLAR (CALCULATOR)</h3>
-                        </div>
-                        <br>
-                        <div id="app">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" onclick="changeYear(20)" id="exampleRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                          20 years
-                                    </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" onclick="changeYear(25)" id="exampleRadios2" value="option2">
-                                        <label class="form-check-label" for="exampleRadios2">
-                                          25 years
-                                    </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-sm-12">
-                                    <label for="">Enter the avg monthly bill</label>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">$</span>
-                                        </div>
-                                        <input type="number" class="form-control" id="totalBill" onkeyup="totalToBill()" value="0" aria-label="Amount (to the nearest dollar)">
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-sm-12 text-center">
-                                    <h4>OR</h4>
-                                </div>
-                                <div class="col-md-5 col-sm-12">
-                                    <label for="">Enter the avg monthly consumption</label>
-                                    <div class="input-group mb-3">
-                                        <input type="number" class="form-control" id="totalConsum" value="0" onkeyup="totalToConsum()">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">kwhs</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Solar System Size needed
-                                    <div class="alert alert-primary" style="margin-right: auto;margin-left: auto;max-width: 300px;" role="alert">
-                                        Panels <span id="panels">0 </span><i class="fas fa-solar-panel"></i><br>
-                                        <span style="display: none;" id="sssn">0 kw</span>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
 
-                                    <div class="alert alert-success" style="line-height: normal;min-height: 115px;padding-left: 5px;margin-right: auto;margin-left: auto;max-width: 320px;background:url('images/rectangulo_saving.png')no-repeat;background-size:cover" role="alert">
-                                        <h3 id="totalSaving" style="color: #FFF;font-weight: bold;">$ 0.00</h3>
-                                        <span>Total savings</span>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <canvas id="myChart" style="max-height: 300px;" width="400" height="400"></canvas>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
         <!--Footer-->
         <footer class="section footer-classic section-sm">
             <div class="container">
@@ -442,270 +375,270 @@
                 </div>
             </div>
         </footer>
-        </div>
-        <div class="snackbars" id="form-output-global"></div>
-        <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="js/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-        <script src="js/core.min.js"></script>
-        <script src="js/script.js"></script>
-        <script>
-            $(function() {
-                $('[data-toggle="popover"]').popover()
-            });
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        });
 
-            var ctx = document.getElementById('myChart');
-            var myChart = null;
-            var totalBill = 0;
-            var totalConsum = 0;
-            var sssn = 0;
-            var panels = 0;
-            var rate = 0.14;
-            var capacity = 34.5;
-            var years = 20;
-            ctx.setAttribute('style', 'display:none');
+        var ctx = document.getElementById('myChart');
+        var myChart = null;
+        var totalBill = 0;
+        var totalConsum = 0;
+        var sssn = 0;
+        var panels = 0;
+        var rate = 0.14;
+        var capacity = 34.5;
+        var years = 20;
+        ctx.setAttribute('style', 'display:none');
 
-            function changeYear(years_) {
-                years = years_;
-                document.getElementById('sssn').innerHTML = 0 + ' kws';
-                document.getElementById('totalBill').value = 0;
+        function changeYear(years_) {
+            years = years_;
+            document.getElementById('sssn').innerHTML = 0 + ' kws';
+            document.getElementById('totalBill').value = 0;
+            document.getElementById('totalConsum').value = 0;
+            document.getElementById('totalSaving').innerHTML = '$0.00'
+            ctx.setAttribute('style', 'display:none;max-height: 300px;');
+        }
+
+        function totalToBill() {
+            totalConsum = 0;
+            tmpTotalBill = document.getElementById('totalBill').value;
+            if (tmpTotalBill != null) {
+                totalBill = parseFloat(tmpTotalBill);
+            }
+            let kws = 0;
+            if (totalBill > 0) {
+                kws = parseFloat(totalBill) / parseFloat(rate);
+                totalConsum = kws;
+                panels = (kws / capacity);
+                panels = panels.toFixed();
+                sssn = (kws / capacity) * 340;
+                sssn = sssn.toFixed();
+            } else {
+                sssn = 0;
+                document.getElementById('sssn').innerHTML = sssn + ' kw';
                 document.getElementById('totalConsum').value = 0;
+                document.getElementById('panels').innerHTML = '0 ';
                 document.getElementById('totalSaving').innerHTML = '$0.00'
                 ctx.setAttribute('style', 'display:none;max-height: 300px;');
+                return 0;
             }
+            totalConsum = totalConsum.toFixed();
+            document.getElementById('sssn').innerHTML = sssn + ' kw';
+            document.getElementById('panels').innerHTML = panels + ' ';
+            document.getElementById('totalConsum').value = totalConsum;
 
-            function totalToBill() {
-                totalConsum = 0;
-                tmpTotalBill = document.getElementById('totalBill').value;
-                if (tmpTotalBill != null) {
-                    totalBill = parseFloat(tmpTotalBill);
-                }
-                let kws = 0;
-                if (totalBill > 0) {
-                    kws = parseFloat(totalBill) / parseFloat(rate);
-                    totalConsum = kws;
-                    panels = (kws / capacity);
-                    panels = panels.toFixed();
-                    sssn = (kws / capacity) * 340;
-                    sssn = sssn.toFixed();
+            let labels = Array();
+            let solar = Array();
+            let normal = Array();
+            let valorEnergiNormal = 0;
+            valorEnergiNormal = totalBill * 12;
+
+            let totalEnergyNormal = 0;
+            let totalEnergySolar = 0;
+            let priceYear = 1332;
+            if (years > 20) {
+                priceYear = 1488;
+            }
+            for (var i = 1; i <= 30; i++) {
+                labels.push(i + '');
+                if (i <= years) {
+                    solar.push(priceYear);
                 } else {
-                    sssn = 0;
-                    document.getElementById('sssn').innerHTML = sssn + ' kw';
-                    document.getElementById('totalConsum').value = 0;
-                    document.getElementById('panels').innerHTML = '0 ';
-                    document.getElementById('totalSaving').innerHTML = '$0.00'
-                    ctx.setAttribute('style', 'display:none;max-height: 300px;');
-                    return 0;
+                    solar.push(0);
                 }
-                totalConsum = totalConsum.toFixed();
-                document.getElementById('sssn').innerHTML = sssn + ' kw';
-                document.getElementById('panels').innerHTML = panels + ' ';
-                document.getElementById('totalConsum').value = totalConsum;
-
-                let labels = Array();
-                let solar = Array();
-                let normal = Array();
-                let valorEnergiNormal = 0;
-                valorEnergiNormal = totalBill * 12;
-
-                let totalEnergyNormal = 0;
-                let totalEnergySolar = 0;
-                let priceYear = 1332;
-                if (years > 20) {
-                    priceYear = 1488;
-                }
-                for (var i = 1; i <= 30; i++) {
-                    labels.push(i + '');
-                    if (i <= years) {
-                        solar.push(priceYear);
-                    } else {
-                        solar.push(0);
-                    }
-                    totalEnergyNormal += valorEnergiNormal;
-                    totalEnergySolar += priceYear;
-                    normal.push(valorEnergiNormal);
-                    valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
-                }
-                totalSaving = totalEnergyNormal - totalEnergySolar;
-                totalSaving = totalSaving.toFixed(0);
-                var formatter = new Intl.NumberFormat('en-US', {
-                    style: 'currency',
-                    currency: 'USD',
-                });
-                document.getElementById('totalSaving').innerHTML = formatter.format(totalSaving);
-                const data = {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Solar Energy',
-                        data: solar,
-                        fill: true,
-                        borderColor: 'rgb(4, 170, 109)',
-                        tension: 0.1
-                    }, {
-                        label: 'Normal Energy',
-                        data: normal,
-                        fill: true,
-                        borderColor: 'rgb(77, 149, 248)',
-                        tension: 0.1
-                    }]
-                };
-                if (myChart != null) {
-                    myChart.destroy();
-                }
-                ctx.setAttribute('style', 'display:inline;max-height: 300px;');
-                myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: data,
-                    options: {
-                        responsive: true,
-                        plugins: {
+                totalEnergyNormal += valorEnergiNormal;
+                totalEnergySolar += priceYear;
+                normal.push(valorEnergiNormal);
+                valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
+            }
+            totalSaving = totalEnergyNormal - totalEnergySolar;
+            totalSaving = totalSaving.toFixed(0);
+            var formatter = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+            });
+            document.getElementById('totalSaving').innerHTML = formatter.format(totalSaving);
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'Solar Energy',
+                    data: solar,
+                    fill: true,
+                    borderColor: 'rgb(4, 170, 109)',
+                    tension: 0.1
+                }, {
+                    label: 'Normal Energy',
+                    data: normal,
+                    fill: true,
+                    borderColor: 'rgb(77, 149, 248)',
+                    tension: 0.1
+                }]
+            };
+            if (myChart != null) {
+                myChart.destroy();
+            }
+            ctx.setAttribute('style', 'display:inline;max-height: 300px;');
+            myChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: false,
+                            text: ''
+                        },
+                    },
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    scales: {
+                        x: {
+                            display: true,
                             title: {
-                                display: false,
-                                text: ''
-                            },
-                        },
-                        interaction: {
-                            mode: 'index',
-                            intersect: false
-                        },
-                        scales: {
-                            x: {
                                 display: true,
-                                title: {
-                                    display: true,
-                                    text: 'Years'
-                                }
-                            },
-                            y: {
+                                text: 'Years'
+                            }
+                        },
+                        y: {
+                            display: true,
+                            title: {
                                 display: true,
-                                title: {
-                                    display: true,
-                                    text: 'Monthly payments'
-                                }
+                                text: 'Monthly payments'
                             }
                         }
-                    },
-                });
+                    }
+                },
+            });
 
+        }
+
+        function totalToConsum() {
+            this.totalBill = 0;
+            var tmpTotalConsum = document.getElementById('totalConsum').value;
+            if (tmpTotalConsum != null) {
+                totalConsum = parseFloat(tmpTotalConsum);
             }
-
-            function totalToConsum() {
+            let kws = 0;
+            if (this.totalConsum > 0) {
+                kws = this.totalConsum;
+                this.totalBill = parseFloat(this.totalConsum) * this.rate;
+                panels = (kws / this.capacity);
+                panels = panels.toFixed();
+                this.sssn = (kws / this.capacity) * 340;
+                this.sssn = sssn.toFixed();
+            } else {
+                sssn = 0;
                 this.totalBill = 0;
-                var tmpTotalConsum = document.getElementById('totalConsum').value;
-                if (tmpTotalConsum != null) {
-                    totalConsum = parseFloat(tmpTotalConsum);
-                }
-                let kws = 0;
-                if (this.totalConsum > 0) {
-                    kws = this.totalConsum;
-                    this.totalBill = parseFloat(this.totalConsum) * this.rate;
-                    panels = (kws / this.capacity);
-                    panels = panels.toFixed();
-                    this.sssn = (kws / this.capacity) * 340;
-                    this.sssn = sssn.toFixed();
-                } else {
-                    sssn = 0;
-                    this.totalBill = 0;
-                    document.getElementById('sssn').innerHTML = sssn + ' kw';
-                    document.getElementById('totalBill').value = 0;
-                    document.getElementById('panels').innerHTML = '0 ';
-                    document.getElementById('totalSaving').innerHTML = '$0.00';
-                    ctx.setAttribute('style', 'display:none;max-height: 300px;');
-                    return 0;
-                }
                 document.getElementById('sssn').innerHTML = sssn + ' kw';
-                document.getElementById('panels').innerHTML = panels + ' ';
-                document.getElementById('totalBill').value = totalBill.toFixed(2);
+                document.getElementById('totalBill').value = 0;
+                document.getElementById('panels').innerHTML = '0 ';
+                document.getElementById('totalSaving').innerHTML = '$0.00';
+                ctx.setAttribute('style', 'display:none;max-height: 300px;');
+                return 0;
+            }
+            document.getElementById('sssn').innerHTML = sssn + ' kw';
+            document.getElementById('panels').innerHTML = panels + ' ';
+            document.getElementById('totalBill').value = totalBill.toFixed(2);
 
-                let labels = Array();
-                let solar = Array();
-                let normal = Array();
-                let valorEnergiNormal = 0;
-                valorEnergiNormal = totalBill * 12;
-                console.log(totalBill);
-                console.log(valorEnergiNormal);
-                let totalEnergyNormal = 0;
-                let totalEnergySolar = 0;
-                let priceYear = 1332;
-                if (years > 20) {
-                    priceYear = 1488;
+            let labels = Array();
+            let solar = Array();
+            let normal = Array();
+            let valorEnergiNormal = 0;
+            valorEnergiNormal = totalBill * 12;
+            console.log(totalBill);
+            console.log(valorEnergiNormal);
+            let totalEnergyNormal = 0;
+            let totalEnergySolar = 0;
+            let priceYear = 1332;
+            if (years > 20) {
+                priceYear = 1488;
+            }
+            for (var i = 1; i <= 30; i++) {
+                labels.push(i + '');
+                if (i <= years) {
+                    solar.push(priceYear);
+                } else {
+                    solar.push(0);
                 }
-                for (var i = 1; i <= 30; i++) {
-                    labels.push(i + '');
-                    if (i <= years) {
-                        solar.push(priceYear);
-                    } else {
-                        solar.push(0);
-                    }
-                    totalEnergyNormal += valorEnergiNormal;
-                    totalEnergySolar += priceYear;
-                    normal.push(valorEnergiNormal);
-                    valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
-                }
-                totalSaving = totalEnergyNormal - totalEnergySolar;
-                totalSaving = totalSaving.toFixed(0);
-                var formatter = new Intl.NumberFormat('en-US', {
-                    style: 'currency',
-                    currency: 'USD',
-                });
-                document.getElementById('totalSaving').innerHTML = formatter.format(totalSaving);
-                const data = {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Solar Energy',
-                        data: solar,
-                        fill: true,
-                        borderColor: 'rgb(236, 145, 34)',
-                        tension: 0.1
-                    }, {
-                        label: 'Normal Energy',
-                        data: normal,
-                        fill: true,
-                        borderColor: 'rgb(77, 149, 248)',
-                        tension: 0.1
-                    }]
-                };
-                if (myChart != null) {
-                    myChart.destroy();
-                }
-                ctx.setAttribute('style', 'display:inline;max-height: 300px;');
-                myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: data,
-                    options: {
-                        responsive: true,
-                        plugins: {
+                totalEnergyNormal += valorEnergiNormal;
+                totalEnergySolar += priceYear;
+                normal.push(valorEnergiNormal);
+                valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
+            }
+            totalSaving = totalEnergyNormal - totalEnergySolar;
+            totalSaving = totalSaving.toFixed(0);
+            var formatter = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+            });
+            document.getElementById('totalSaving').innerHTML = formatter.format(totalSaving);
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'Solar Energy',
+                    data: solar,
+                    fill: true,
+                    borderColor: 'rgb(236, 145, 34)',
+                    tension: 0.1
+                }, {
+                    label: 'Normal Energy',
+                    data: normal,
+                    fill: true,
+                    borderColor: 'rgb(77, 149, 248)',
+                    tension: 0.1
+                }]
+            };
+            if (myChart != null) {
+                myChart.destroy();
+            }
+            ctx.setAttribute('style', 'display:inline;max-height: 300px;');
+            myChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: false,
+                            text: ''
+                        },
+                    },
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    scales: {
+                        x: {
+                            display: true,
                             title: {
-                                display: false,
-                                text: ''
-                            },
-                        },
-                        interaction: {
-                            mode: 'index',
-                            intersect: false
-                        },
-                        scales: {
-                            x: {
                                 display: true,
-                                title: {
-                                    display: true,
-                                    text: 'Years'
-                                }
-                            },
-                            y: {
+                                text: 'Years'
+                            }
+                        },
+                        y: {
+                            display: true,
+                            title: {
                                 display: true,
-                                title: {
-                                    display: true,
-                                    text: 'Monthly payments'
-                                }
+                                text: 'Monthly payments'
                             }
                         }
-                    },
-                });
-            }
-        </script>
+                    }
+                },
+            });
+        }
+    </script>
 
-        <!--coded by Drel-->
+    <!--coded by Drel-->
 </body>
 
 </html>
