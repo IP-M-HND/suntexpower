@@ -31,6 +31,12 @@
             display: block;
         }
     </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_X4d1ceElIkarje6zOx8HM");
+        })();
+    </script>
 </head>
 
 <body>
@@ -283,42 +289,89 @@
                     <div class="col-xl-10">
                         <div class="section-name wow fadeInRight text-center" data-wow-delay=".2s">testimonials</div>
                         <h3 class="wow fadeInLeft text-capitalize text-center" data-wow-delay=".3s">What People Say<span class="text-primary"> About Us</span></h3>
+                        <hr>
+                        <br>
                         <div class="owl-carousel review-carousel" data-items="1" data-sm-items="1" data-md-items="1" data-lg-items="1" data-xl-items="1" data-xxl-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="true"
                             data-autoplay="false">
                             <div class="item">
-                                <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="images/descarga.png" alt="" width="216" height="108" />
-                                </div>
+
                                 <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                                    <p>I loved the way that Suntexpower helped me put up the solar panels and fulfilled everything I had promised, now I have a month of installation and my electricity bill is completely down. Thanks Suntexpower.</p>
-                                    <div class="item-subsection"><span class="item-subsection-title devider-left">Carlos Aguirre</span><span>Regular Client</span></div>
+                                    <img src="images/testimonials/test1.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="images/descarga.png" alt="" width="216" height="108" />
-                                </div>
                                 <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                                    <p>Great company! You will not regret going solar. Casey is knowledgeable and goes out of his way to make sure his customers are happy. I’d recommend SunTex Power any day!</p>
-                                    <div class="item-subsection"><span class="item-subsection-title devider-left">Gabriela Perez</span><span>Regular Client</span></div>
+                                    <img src="images/testimonials/test2.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="images/descarga.png" alt="" width="216" height="108" />
-                                </div>
                                 <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                                    <p>SunTex helped me cut my monthly expenses by $40 and the panels look awesome. Landon was super nice and easy to work with</p>
-                                    <div class="item-subsection"><span class="item-subsection-title devider-left">Lauren Palmer</span><span>Regular Client</span></div>
+                                    <img src="images/testimonials/test3.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="images/descarga.png" alt="" width="216" height="108" />
-                                </div>
                                 <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                                    <p>After sitting down with multiple Companies I came across SunTex Power and I’m Very thankful for their honesty and integrity! I’m glad I chose them they are a group of very knowledgeable guys. Thank you again! To future
-                                        solar clients don’t hesitate, give them a try and I promise you will be happy. They truly care about their clients.</p>
-                                    <div class="item-subsection"><span class="item-subsection-title devider-left">Photography Tips With Tay</span><span>Regular Client</span></div>
+                                    <img src="images/testimonials/test4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-description wow fadeInUp" data-wow-delay=".3s">
+                                    <img src="images/testimonials/test5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-description wow fadeInUp" data-wow-delay=".3s">
+                                    <img src="images/testimonials/test6.png" alt="">
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Mailform-->
+        <section class="section section-md">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 text-center">
+                        <h3 class="font-weight-bold wow fadeInLeft">Contacts</h3>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!--RD Mailform-->
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-md-8 col-12">
+                        <div id="successMesaje" class="alert alert-success2" role="alert" style="font-size: larger;display: none;">
+                            Your message was sent.
+                        </div>
+                        <form class="rd-mailform text-left" id="contact-form" data-form-output="form-output-global" data-form-type="contact" method="post">
+                            <input type="hidden" name="contact_number">
+                            <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                <label class="form-label" for="contact-name">Name<span class="req-symbol">*</span></label>
+                                <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                            </div>
+                            <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                <label class="form-label" for="contact-phone">Phone<span class="req-symbol">*</span></label>
+                                <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Required @PhoneNumber">
+                            </div>
+                            <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                <label class="form-label" for="contact-email">E-Mail<span class="req-symbol">*</span></label>
+                                <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
+                            </div>
+                            <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                <label class="form-label label-textarea" for="contact-message">Message<span class="req-symbol">*</span></label>
+                                <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                            </div>
+                            <!--Google captcha-->
+                            <div class="form-wrap text-left form-validation-left">
+                                <div class="recaptcha" id="captcha1" data-sitekey="6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt"></div>
+                            </div>
+                            <div class="form-button group-sm text-center text-lg-left">
+                                <button class="button button-primary" type="submit">Send</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -335,16 +388,7 @@
                         <a class="d-inline-block accent-link" href="mailto:#"> casey.suntexpower@gmail.com
             </a><a class="d-inline-block" href="tel:#">+1 346 248 7799</a>
                     </div>
-                    <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
-                        <P class="footer-classic-title">Quick Links</P>
-                        <ul class="footer-classic-nav-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="contacts.html">Contacts</a></li>
-                        </ul>
-                    </div>
+
                     <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
                         <P class="footer-classic-title">newsletter</P>
                         <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
@@ -382,262 +426,28 @@
     <script src="js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        $(function() {
-            $('[data-toggle="popover"]').popover()
-        });
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_yekv3yc', 'template_cb5ezj8', this)
+                    .then(function() {
+                        //console.log('SUCCESS!');
+                        document.getElementsByName('name').value = "";
+                        document.getElementsByName('phone').value = "";
+                        document.getElementsByName('email').value = "";
+                        document.getElementsByName('message').value = "";
+                        document.getElementById('contact-form').setAttribute('style', 'display:none');
+                        document.getElementById('successMesaje').setAttribute('style', 'display:block');
+                    }, function(error) {
 
-        var ctx = document.getElementById('myChart');
-        var myChart = null;
-        var totalBill = 0;
-        var totalConsum = 0;
-        var sssn = 0;
-        var panels = 0;
-        var rate = 0.14;
-        var capacity = 34.5;
-        var years = 20;
-        ctx.setAttribute('style', 'display:none');
-
-        function changeYear(years_) {
-            years = years_;
-            document.getElementById('sssn').innerHTML = 0 + ' kws';
-            document.getElementById('totalBill').value = 0;
-            document.getElementById('totalConsum').value = 0;
-            document.getElementById('totalSaving').innerHTML = '$0.00'
-            ctx.setAttribute('style', 'display:none;max-height: 300px;');
-        }
-
-        function totalToBill() {
-            totalConsum = 0;
-            tmpTotalBill = document.getElementById('totalBill').value;
-            if (tmpTotalBill != null) {
-                totalBill = parseFloat(tmpTotalBill);
-            }
-            let kws = 0;
-            if (totalBill > 0) {
-                kws = parseFloat(totalBill) / parseFloat(rate);
-                totalConsum = kws;
-                panels = (kws / capacity);
-                panels = panels.toFixed();
-                sssn = (kws / capacity) * 340;
-                sssn = sssn.toFixed();
-            } else {
-                sssn = 0;
-                document.getElementById('sssn').innerHTML = sssn + ' kw';
-                document.getElementById('totalConsum').value = 0;
-                document.getElementById('panels').innerHTML = '0 ';
-                document.getElementById('totalSaving').innerHTML = '$0.00'
-                ctx.setAttribute('style', 'display:none;max-height: 300px;');
-                return 0;
-            }
-            totalConsum = totalConsum.toFixed();
-            document.getElementById('sssn').innerHTML = sssn + ' kw';
-            document.getElementById('panels').innerHTML = panels + ' ';
-            document.getElementById('totalConsum').value = totalConsum;
-
-            let labels = Array();
-            let solar = Array();
-            let normal = Array();
-            let valorEnergiNormal = 0;
-            valorEnergiNormal = totalBill * 12;
-
-            let totalEnergyNormal = 0;
-            let totalEnergySolar = 0;
-            let priceYear = 1332;
-            if (years > 20) {
-                priceYear = 1488;
-            }
-            for (var i = 1; i <= 30; i++) {
-                labels.push(i + '');
-                if (i <= years) {
-                    solar.push(priceYear);
-                } else {
-                    solar.push(0);
-                }
-                totalEnergyNormal += valorEnergiNormal;
-                totalEnergySolar += priceYear;
-                normal.push(valorEnergiNormal);
-                valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
-            }
-            totalSaving = totalEnergyNormal - totalEnergySolar;
-            totalSaving = totalSaving.toFixed(0);
-            var formatter = new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-            });
-            document.getElementById('totalSaving').innerHTML = formatter.format(totalSaving);
-            const data = {
-                labels: labels,
-                datasets: [{
-                    label: 'Solar Energy',
-                    data: solar,
-                    fill: true,
-                    borderColor: 'rgb(4, 170, 109)',
-                    tension: 0.1
-                }, {
-                    label: 'Normal Energy',
-                    data: normal,
-                    fill: true,
-                    borderColor: 'rgb(77, 149, 248)',
-                    tension: 0.1
-                }]
-            };
-            if (myChart != null) {
-                myChart.destroy();
-            }
-            ctx.setAttribute('style', 'display:inline;max-height: 300px;');
-            myChart = new Chart(ctx, {
-                type: 'line',
-                data: data,
-                options: {
-                    responsive: true,
-                    plugins: {
-                        title: {
-                            display: false,
-                            text: ''
-                        },
-                    },
-                    interaction: {
-                        mode: 'index',
-                        intersect: false
-                    },
-                    scales: {
-                        x: {
-                            display: true,
-                            title: {
-                                display: true,
-                                text: 'Years'
-                            }
-                        },
-                        y: {
-                            display: true,
-                            title: {
-                                display: true,
-                                text: 'Monthly payments'
-                            }
-                        }
-                    }
-                },
-            });
-
-        }
-
-        function totalToConsum() {
-            this.totalBill = 0;
-            var tmpTotalConsum = document.getElementById('totalConsum').value;
-            if (tmpTotalConsum != null) {
-                totalConsum = parseFloat(tmpTotalConsum);
-            }
-            let kws = 0;
-            if (this.totalConsum > 0) {
-                kws = this.totalConsum;
-                this.totalBill = parseFloat(this.totalConsum) * this.rate;
-                panels = (kws / this.capacity);
-                panels = panels.toFixed();
-                this.sssn = (kws / this.capacity) * 340;
-                this.sssn = sssn.toFixed();
-            } else {
-                sssn = 0;
-                this.totalBill = 0;
-                document.getElementById('sssn').innerHTML = sssn + ' kw';
-                document.getElementById('totalBill').value = 0;
-                document.getElementById('panels').innerHTML = '0 ';
-                document.getElementById('totalSaving').innerHTML = '$0.00';
-                ctx.setAttribute('style', 'display:none;max-height: 300px;');
-                return 0;
-            }
-            document.getElementById('sssn').innerHTML = sssn + ' kw';
-            document.getElementById('panels').innerHTML = panels + ' ';
-            document.getElementById('totalBill').value = totalBill.toFixed(2);
-
-            let labels = Array();
-            let solar = Array();
-            let normal = Array();
-            let valorEnergiNormal = 0;
-            valorEnergiNormal = totalBill * 12;
-            console.log(totalBill);
-            console.log(valorEnergiNormal);
-            let totalEnergyNormal = 0;
-            let totalEnergySolar = 0;
-            let priceYear = 1332;
-            if (years > 20) {
-                priceYear = 1488;
-            }
-            for (var i = 1; i <= 30; i++) {
-                labels.push(i + '');
-                if (i <= years) {
-                    solar.push(priceYear);
-                } else {
-                    solar.push(0);
-                }
-                totalEnergyNormal += valorEnergiNormal;
-                totalEnergySolar += priceYear;
-                normal.push(valorEnergiNormal);
-                valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
-            }
-            totalSaving = totalEnergyNormal - totalEnergySolar;
-            totalSaving = totalSaving.toFixed(0);
-            var formatter = new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-            });
-            document.getElementById('totalSaving').innerHTML = formatter.format(totalSaving);
-            const data = {
-                labels: labels,
-                datasets: [{
-                    label: 'Solar Energy',
-                    data: solar,
-                    fill: true,
-                    borderColor: 'rgb(236, 145, 34)',
-                    tension: 0.1
-                }, {
-                    label: 'Normal Energy',
-                    data: normal,
-                    fill: true,
-                    borderColor: 'rgb(77, 149, 248)',
-                    tension: 0.1
-                }]
-            };
-            if (myChart != null) {
-                myChart.destroy();
-            }
-            ctx.setAttribute('style', 'display:inline;max-height: 300px;');
-            myChart = new Chart(ctx, {
-                type: 'line',
-                data: data,
-                options: {
-                    responsive: true,
-                    plugins: {
-                        title: {
-                            display: false,
-                            text: ''
-                        },
-                    },
-                    interaction: {
-                        mode: 'index',
-                        intersect: false
-                    },
-                    scales: {
-                        x: {
-                            display: true,
-                            title: {
-                                display: true,
-                                text: 'Years'
-                            }
-                        },
-                        y: {
-                            display: true,
-                            title: {
-                                display: true,
-                                text: 'Monthly payments'
-                            }
-                        }
-                    }
-                },
+                    });
             });
         }
     </script>
-
     <!--coded by Drel-->
 </body>
 
