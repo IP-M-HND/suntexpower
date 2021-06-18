@@ -65,7 +65,7 @@
                                 <li>
                                     <div class="unit unit-spacing-xs align-items-center">
                                         <div class="unit-left"><i class="fas fa-phone-square-alt"></i></div>
-                                        <div class="unit-body"><a href="tel:#">+1 346 248 7799</a></div>
+                                        <div class="unit-body"><a href="tel:#">+(281) 638-7604</a></div>
                                     </div>
                                 </li>
                                 <li>
@@ -82,11 +82,11 @@
                                 </li>
                             </ul>
                             <ul class="social-links" style=" list-style:none">
-                                <li><i class="fab fa-facebook"></i>
-                                    <a class="" target="_black" href="https://www.facebook.com/SunTexPower/"></a>
+                                <li>
+                                    <a class="" target="_black" href="https://www.facebook.com/SunTexPower/"><i class="fab fa-facebook"></i></a>
                                 </li>
-                                <li><i class="fab fa-instagram"></i>
-                                    <a class="" target="_black" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a>
+                                <li>
+                                    <a class="" target="_black" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"><i class="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -117,6 +117,8 @@
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="products.html">Energy Efficiency + More</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="#">FAQ</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" style="background: #ec9122;padding: 10px;border-radius: 5px;" href="index.html#contact"><i class="fas fa-sun"></i> GO SOLAR</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -325,56 +327,76 @@
                                 </div>
                             </div>
                         </div>
+                        <a name="contact"></a>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--Mailform-->
-        <section class="section section-md">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 text-center">
-                        <h3 class="font-weight-bold wow fadeInLeft">Contacts</h3>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <!--RD Mailform-->
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-md-8 col-12">
-                        <div id="successMesaje" class="alert alert-success2" role="alert" style="font-size: larger;display: none;">
-                            Your message was sent.
+        <section class="section section-md" style="background-image: linear-gradient(to right top, #dddddd, #f2cde9, #ffb5c6, #ffad7c, #f8bf17);">
+
+            <div class="card ml-auto mr-auto" style="box-shadow: -1px 2px 5px 0px rgb(0 0 0 / 49%);
+            -webkit-box-shadow: -1px 2px 5px 0px rgb(0 0 0 / 49%);
+            -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.49);max-width: 70%;background:url('images/4850037.jpg')no-repeat;background-size:cover;">
+                <div class="card-title">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8 text-center">
+                                <h3 class="font-weight-bold wow fadeInLeft">Contact</h3>
+                                <hr>
+                            </div>
                         </div>
-                        <form class="rd-mailform text-left" id="contact-form" data-form-output="form-output-global" data-form-type="contact" method="post">
-                            <input type="hidden" name="contact_number">
-                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                <label class="form-label" for="contact-name">Name<span class="req-symbol">*</span></label>
-                                <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                    </div>
+                </div>
+                <div class="card-body" style="padding-top: 0px;">
+                    <div class="container" style="    margin-top: 15px;">
+                        <!--RD Mailform-->
+                        <div class="row justify-content-center">
+                            <div class="col-md-3">
+                                <i class="far fa-envelope"></i> frontdesk@suntexpower.com <br> <i class="fas fa-phone-alt"></i> +(281) 638-7604
+                                <br>
+                                <a class="" target="_black" href="https://www.facebook.com/SunTexPower/"><i style="font-size: 30px;" class="fab fa-facebook"></i></a>
+                                <a class="" target="_black" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"><i style="font-size: 30px;" class="fab fa-instagram"></i></a>
+
                             </div>
-                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                <label class="form-label" for="contact-phone">Phone<span class="req-symbol">*</span></label>
-                                <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Required @PhoneNumber">
+                            <div class="col-xl-6 col-md-8 col-12">
+                                <div id="successMesaje" class="alert alert-success2" role="alert" style="font-size: larger;display: none;">
+                                    Your message was sent.
+                                </div>
+                                <form class="rd-mailform text-left" id="contact-form" data-form-output="form-output-global" data-form-type="contact" method="post">
+                                    <input type="hidden" name="contact_number">
+                                    <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                        <label class="form-label" for="contact-name">Name<span class="req-symbol">*</span></label>
+                                        <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                                    </div>
+                                    <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                        <label class="form-label" for="contact-phone">Phone<span class="req-symbol">*</span></label>
+                                        <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Required @PhoneNumber">
+                                    </div>
+                                    <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                        <label class="form-label" for="contact-email">E-Mail<span class="req-symbol">*</span></label>
+                                        <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
+                                    </div>
+                                    <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                        <label class="form-label label-textarea" for="contact-message">Message<span class="req-symbol">*</span></label>
+                                        <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                                    </div>
+                                    <!--Google captcha-->
+                                    <div class="form-wrap text-left form-validation-left">
+                                        <div class="recaptcha" id="captcha1" data-sitekey="6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt"></div>
+                                    </div>
+                                    <div class="form-button group-sm text-center text-lg-left">
+                                        <button class="button button-primary" type="submit">Send</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                <label class="form-label" for="contact-email">E-Mail<span class="req-symbol">*</span></label>
-                                <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
-                            </div>
-                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                <label class="form-label label-textarea" for="contact-message">Message<span class="req-symbol">*</span></label>
-                                <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                            </div>
-                            <!--Google captcha-->
-                            <div class="form-wrap text-left form-validation-left">
-                                <div class="recaptcha" id="captcha1" data-sitekey="6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt"></div>
-                            </div>
-                            <div class="form-button group-sm text-center text-lg-left">
-                                <button class="button button-primary" type="submit">Send</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
         </section>
 
         <!--Footer-->
@@ -386,15 +408,16 @@
                         <div class="d-block offset-top-0">US (Houston)</span>
                         </div>
                         <a class="d-inline-block accent-link" href="mailto:#"> casey.suntexpower@gmail.com
-            </a><a class="d-inline-block" href="tel:#">+1 346 248 7799</a>
+            </a><a class="d-inline-block" href="tel:#">+(281) 638-7604</a>
                     </div>
 
                     <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
                         <P class="footer-classic-title">newsletter</P>
-                        <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <form id="newsletter" class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post">
+                            <input type="hidden" name="contact_number">
                             <div class="form-wrap">
                                 <label class="form-label" for="subscribe-email">Your Email Address</label>
-                                <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
+                                <input class="form-input" id="subscribe-email" type="email" name="emailNewsletter" data-constraints="@Email @Required">
                             </div>
                             <div class="form-button group-sm text-center text-lg-left">
                                 <button class="button button-primary button-circle" type="submit">sign up</button>
@@ -409,11 +432,11 @@
                     <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved.</a>
                     </p>
                     <ul class="social-links" style=" list-style:none">
-                        <li><i class="fab fa-facebook"></i>
-                            <a class="" href="https://www.facebook.com/SunTexPower/"></a>
+                        <li>
+                            <a class="" href="https://www.facebook.com/SunTexPower/"><i class="fab fa-facebook"></i></a>
                         </li>
-                        <li><i class="fab fa-instagram"></i>
-                            <a class="" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a>
+                        <li>
+                            <a class="" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -444,6 +467,20 @@
                         document.getElementById('successMesaje').setAttribute('style', 'display:block');
                     }, function(error) {
 
+                    });
+            });
+
+            document.getElementById('newsletter').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_yekv3yc', 'template_2t6z54p', this)
+                    .then(function() {
+                        //console.log('SUCCESS!');
+                        document.getElementsByName('emailNewsletter').value = "";
+                    }, function(error) {
+                        document.getElementsByName('emailNewsletter').value = "";
                     });
             });
         }

@@ -577,7 +577,7 @@ a:active {
 }
 
 a:hover {
-    color: #ffffff;
+    /*color: #ffffff;*/
 }
 
 a[href*="tel"],
