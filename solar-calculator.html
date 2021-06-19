@@ -334,9 +334,11 @@
 
                 let totalEnergyNormal = 0;
                 let totalEnergySolar = 0;
-                let priceYear = 1488;
+                let pricePanels = 4.51;
+                let priceYear = (pricePanels * panels) * 12;
                 if (years > 20) {
-                    priceYear = 1332;
+                    pricePanels = 4.02;
+                    priceYear = (pricePanels * panels) * 12;
                 }
 
                 for (var i = 1; i <= 30; i++) {
@@ -458,9 +460,11 @@
                 console.log(valorEnergiNormal);
                 let totalEnergyNormal = 0;
                 let totalEnergySolar = 0;
-                let priceYear = 1488;
+                let pricePanels = 4.51;
+                let priceYear = (pricePanels * panels) * 12;
                 if (years > 20) {
-                    priceYear = 1332;
+                    pricePanels = 4.02;
+                    priceYear = (pricePanels * panels) * 12;
                 }
                 for (var i = 1; i <= 30; i++) {
                     labels.push(i + '');
