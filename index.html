@@ -451,6 +451,9 @@
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
     <script type="text/javascript">
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        });
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();

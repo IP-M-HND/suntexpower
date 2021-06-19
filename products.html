@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-    <title>SUNTEX</title>
+    <title>SUNTEX POWER</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
     <style>
         .ie-panel {
             display: none;
@@ -198,8 +196,8 @@
                                     <li>Reduces the amount of Solar panels needed</li>
                                     <li>Level out temperatures throughout home</li>
                                     <li>Home value increase</li>
-                                    <li>Disclaimer: Savings percentages may vary depending on attic coverage throughout the home or from home being a 1 story or 2 story. 2 story homes typically will have savings reduced percentages reduced due to attic coverage.</li>
                                 </ul>
+                                <a tabindex="0" class="btn btn-primary" style="font-weight: normal;" role="button" data-toggle="popover" data-trigger="focus" title="Disclaimer" data-content="Savings percentages may vary depending on attic coverage throughout the home or from home being a 1 story or 2 story. 2 story homes typically will have savings reduced percentages reduced due to attic coverage."><i class="fas fa-exclamation-triangle"></i></a>
                             </div>
                         </div>
                         <hr>
@@ -224,9 +222,9 @@
                                     <li>Reduces the amount of Solar panels needed</li>
                                     <li>Level out temperatures throughout home</li>
                                     <li>Home Value increase</li>
-                                    <li>Disclaimer- Hvac replacement savings vary to the age of your current system that is being replaced. Savings will also vary if replacing only one unit from a home that has multiple HVAC units. Savings will vary depending
-                                        on the efficiency of the unit used. The savings percentage above is conservative annual savings based upon using a 14 Seer HVAC unit replacement.</li>
                                 </ul>
+                                <a tabindex="0" class="btn btn-primary" style="font-weight: normal;" role="button" data-toggle="popover" data-trigger="focus" title="Disclaimer" data-content="Hvac replacement savings vary to the age of your current system that is being replaced. Savings will also vary if replacing only one unit from a home that has multiple HVAC units. Savings will vary depending
+                                on the efficiency of the unit used. The savings percentage above is conservative annual savings based upon using a 16 Seer HVAC unit replacement."><i class="fas fa-exclamation-triangle"></i></a>
                             </div>
                         </div>
                         <hr>
@@ -247,8 +245,8 @@
                                     <li>Better in-home temperatures</li>
                                     <li>Reduces overall consumption</li>
                                     <li>Extends life of HVAC </li>
-                                    <li>Disclaimer: Savings percentages vary depending on attic coverage of the home and the condition of current insulation. Savings may vary depending on the home being a 1 story of 2 story house.</li>
                                 </ul>
+                                <a tabindex="0" class="btn btn-primary" style="font-weight: normal;" role="button" data-toggle="popover" data-trigger="focus" title="Disclaimer" data-content="Savings percentages vary depending on attic coverage of the home and the condition of current insulation. Savings may vary depending on the home being a 1 story of 2 story house."><i class="fas fa-exclamation-triangle"></i></a>
                             </div>
                         </div>
                         <hr>
@@ -268,8 +266,8 @@
                                     <li>Extend life of HVAC minimal</li>
                                     <li>Lower attic temps</li>
                                     <li>Reduces overall consumption </li>
-                                    <li>Disclaimer- savings will vary or deplete if home already has pro-active ventilation system installed.</li>
                                 </ul>
+                                <a tabindex="0" class="btn btn-primary" style="font-weight: normal;" role="button" data-toggle="popover" data-trigger="focus" title="Disclaimer" data-content="Savings will vary or deplete if home already has pro-active ventilation system installed."><i class="fas fa-exclamation-triangle"></i></a>
                             </div>
                         </div>
                         <hr>
@@ -306,12 +304,14 @@
                         <a class="d-inline-block accent-link" href="mailto:#"> casey.suntexpower@gmail.com
             </a><a class="d-inline-block" href="tel:#">+(281) 638-7604</a>
                     </div>
+
                     <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
                         <P class="footer-classic-title">newsletter</P>
-                        <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <form id="newsletter" class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post">
+                            <input type="hidden" name="contact_number">
                             <div class="form-wrap">
                                 <label class="form-label" for="subscribe-email">Your Email Address</label>
-                                <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
+                                <input class="form-input" id="subscribe-email" type="email" name="emailNewsletter" data-constraints="@Email @Required">
                             </div>
                             <div class="form-button group-sm text-center text-lg-left">
                                 <button class="button button-primary button-circle" type="submit">sign up</button>
@@ -326,11 +326,11 @@
                     <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved.</a>
                     </p>
                     <ul class="social-links" style=" list-style:none">
-                        <li><i class="fab fa-facebook"></i>
-                            <a class="" href="https://www.facebook.com/SunTexPower/"></a>
+                        <li>
+                            <a class="" href="https://www.facebook.com/SunTexPower/"><i class="fab fa-facebook"></i></a>
                         </li>
-                        <li><i class="fab fa-instagram"></i>
-                            <a class="" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"></a>
+                        <li>
+                            <a class="" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -343,35 +343,25 @@
     <script src="js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/index.js"></script>
     <script>
         $(function() {
             $('[data-toggle="popover"]').popover()
-        })
-        var ctx = document.getElementById('myChart');
-
-        const labels = ['1', '2', '3', '4', '5', '6', '7'];
-        const data = {
-            labels: labels,
-            datasets: [{
-                label: 'Solar Energy',
-                data: [10, 20, 10, 20, 10, 20, 10],
-                fill: true,
-                borderColor: 'rgb(236, 145, 34)',
-                tension: 0.1
-            }, {
-                label: 'Normal Energy',
-                data: [40, 60, 70, 80, 90, 100, 110],
-                fill: true,
-                borderColor: 'rgb(77, 149, 248)',
-                tension: 0.1
-            }]
-        };
-
-        var myChart = new Chart(ctx, {
-            type: 'line',
-            data: data,
         });
+        window.onload = function() {
+            document.getElementById('newsletter').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_yekv3yc', 'template_2t6z54p', this)
+                    .then(function() {
+                        //console.log('SUCCESS!');
+                        document.getElementsByName('emailNewsletter').value = "";
+                    }, function(error) {
+                        document.getElementsByName('emailNewsletter').value = "";
+                    });
+            });
+        }
     </script>
     <!--coded by Drel-->
 </body>

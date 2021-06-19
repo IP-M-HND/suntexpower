@@ -225,10 +225,11 @@
 
                     <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
                         <P class="footer-classic-title">newsletter</P>
-                        <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <form id="newsletter" class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post">
+                            <input type="hidden" name="contact_number">
                             <div class="form-wrap">
                                 <label class="form-label" for="subscribe-email">Your Email Address</label>
-                                <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
+                                <input class="form-input" id="subscribe-email" type="email" name="emailNewsletter" data-constraints="@Email @Required">
                             </div>
                             <div class="form-button group-sm text-center text-lg-left">
                                 <button class="button button-primary button-circle" type="submit">sign up</button>
@@ -264,6 +265,22 @@
             $(function() {
                 $('[data-toggle="popover"]').popover()
             });
+
+            window.onload = function() {
+                document.getElementById('newsletter').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_yekv3yc', 'template_2t6z54p', this)
+                        .then(function() {
+                            //console.log('SUCCESS!');
+                            document.getElementsByName('emailNewsletter').value = "";
+                        }, function(error) {
+                            document.getElementsByName('emailNewsletter').value = "";
+                        });
+                });
+            }
 
             var ctx = document.getElementById('myChart');
             var myChart = null;

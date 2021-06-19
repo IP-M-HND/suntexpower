@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-    <title>SUNTEX</title>
+    <title>SUNTEX POWER</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -148,10 +148,11 @@
 
                     <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
                         <P class="footer-classic-title">newsletter</P>
-                        <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <form id="newsletter" class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post">
+                            <input type="hidden" name="contact_number">
                             <div class="form-wrap">
                                 <label class="form-label" for="subscribe-email">Your Email Address</label>
-                                <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
+                                <input class="form-input" id="subscribe-email" type="email" name="emailNewsletter" data-constraints="@Email @Required">
                             </div>
                             <div class="form-button group-sm text-center text-lg-left">
                                 <button class="button button-primary button-circle" type="submit">sign up</button>
@@ -165,7 +166,7 @@
                 <div class="footer-classic-aside">
                     <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved.</a>
                     </p>
-                    <ul class="social-links">
+                    <ul class="social-links" style=" list-style:none">
                         <li>
                             <a class="" href="https://www.facebook.com/SunTexPower/"><i class="fab fa-facebook"></i></a>
                         </li>
@@ -182,30 +183,21 @@
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
     <script>
-        var ctx = document.getElementById('myChart');
-
-        const labels = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25'];
-        const data = {
-            labels: labels,
-            datasets: [{
-                label: 'Solar Energy',
-                data: [10, 20, 10, 20, 10, 20, 10, 20, 10, 20, 10, 20, 10, 20, 10, 20, 10, 20, 10, 20, 10, 20, 10, 20, 10],
-                fill: true,
-                borderColor: 'rgb(236, 145, 34)',
-                tension: 0.1
-            }, {
-                label: 'Normal Energy',
-                data: [40, 60, 70, 80, 90, 100, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200],
-                fill: true,
-                borderColor: 'rgb(77, 149, 248)',
-                tension: 0.1
-            }]
-        };
-
-        var myChart = new Chart(ctx, {
-            type: 'line',
-            data: data,
-        });
+        window.onload = function() {
+            document.getElementById('newsletter').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_yekv3yc', 'template_2t6z54p', this)
+                    .then(function() {
+                        //console.log('SUCCESS!');
+                        document.getElementsByName('emailNewsletter').value = "";
+                    }, function(error) {
+                        document.getElementsByName('emailNewsletter').value = "";
+                    });
+            });
+        }
     </script>
     <!--coded by Drel-->
 </body>
