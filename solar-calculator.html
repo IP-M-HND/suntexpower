@@ -347,15 +347,15 @@
                 let solar = Array();
                 let normal = Array();
                 let valorEnergiNormal = 0;
-                valorEnergiNormal = totalBill * 12;
+                valorEnergiNormal = totalBill; // * 12;
 
                 let totalEnergyNormal = 0;
                 let totalEnergySolar = 0;
                 let pricePanels = 4.51;
-                let priceYear = (pricePanels * panels) * 12;
+                let priceYear = (pricePanels * panels); // * 12;
                 if (years > 20) {
                     pricePanels = 4.02;
-                    priceYear = (pricePanels * panels) * 12;
+                    priceYear = (pricePanels * panels); // * 12;
                 }
 
                 for (var i = 1; i <= 30; i++) {
@@ -404,8 +404,8 @@
                         responsive: true,
                         plugins: {
                             title: {
-                                display: false,
-                                text: ''
+                                display: true,
+                                text: 'How much does solar cost?'
                             },
                         },
                         interaction: {
@@ -472,16 +472,15 @@
                 let solar = Array();
                 let normal = Array();
                 let valorEnergiNormal = 0;
-                valorEnergiNormal = totalBill * 12;
-                console.log(totalBill);
-                console.log(valorEnergiNormal);
+                valorEnergiNormal = totalBill; // * 12;
+
                 let totalEnergyNormal = 0;
                 let totalEnergySolar = 0;
                 let pricePanels = 4.51;
-                let priceYear = (pricePanels * panels) * 12;
+                let priceYear = (pricePanels * panels); // * 12;
                 if (years > 20) {
                     pricePanels = 4.02;
-                    priceYear = (pricePanels * panels) * 12;
+                    priceYear = (pricePanels * panels); // * 12;
                 }
                 for (var i = 1; i <= 30; i++) {
                     labels.push(i + '');
@@ -529,8 +528,8 @@
                         responsive: true,
                         plugins: {
                             title: {
-                                display: false,
-                                text: ''
+                                display: true,
+                                text: 'How much does solar cost?'
                             },
                         },
                         interaction: {
