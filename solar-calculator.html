@@ -194,6 +194,7 @@
                                         YOU NEED <br><span id="panels">0 </span> PANELS <i class="fas fa-solar-panel"></i>
                                         <span style="display: none;" id="sssn">0 kw</span>
                                     </div>
+
                                 </div>
                                 <div class="col-12 text-center">
 
@@ -201,6 +202,9 @@
                                         <h3 id="totalSaving" style="color: #FFF;font-weight: bold;">$ 0.00</h3>
                                         <span>Total savings</span>
                                     </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <a id="btngoSola" class="btn btn-lg" style="display: none;background: #ec9122;padding: 10px;border-radius: 5px;color: #FFF;" href="index.html#contact"><i class="fas fa-sun"></i> GO SOLAR</a>
                                 </div>
                                 <div class="col-12">
                                     <canvas id="myChart" style="max-height: 300px;" width="400" height="400"></canvas>
@@ -315,6 +319,8 @@
             }
 
             function totalToBill() {
+
+                document.getElementById('btngoSola').setAttribute('style', 'display:block;background: #ec9122;padding: 10px;border-radius: 5px;color: #FFF;margin-left: auto;max-width: 150px;margin-right: auto;');
                 totalConsum = 0;
                 tmpTotalBill = document.getElementById('totalBill').value;
                 if (tmpTotalBill != null) {
@@ -405,7 +411,7 @@
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'How much does solar cost?'
+                                text: 'How much does solar cost? '
                             },
                         },
                         interaction: {
@@ -440,6 +446,7 @@
             }
 
             function totalToConsum() {
+                document.getElementById('btngoSola').setAttribute('style', 'display:block;background: #ec9122;padding: 10px;border-radius: 5px;color: #FFF;margin-left: auto;max-width: 150px;margin-right: auto;');
                 this.totalBill = 0;
                 var tmpTotalConsum = document.getElementById('totalConsum').value;
                 if (tmpTotalConsum != null) {
