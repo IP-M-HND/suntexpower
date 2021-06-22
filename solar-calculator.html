@@ -65,7 +65,7 @@
                                 <li>
                                     <div class="unit unit-spacing-xs align-items-center">
                                         <div class="unit-left"><i class="far fa-envelope"></i></div>
-                                        <div class="unit-body"><a href="mailto:#">casey.suntexpower@gmail.com</a></div>
+                                        <div class="unit-body"><a href="mailto:#">frontdesk@suntexpower.com</a></div>
                                     </div>
                                 </li>
                                 <li>
@@ -215,6 +215,67 @@
                     </div>
                 </div>
         </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <form class="rd-mailform text-left" id="contact-form" data-form-output="form-output-global" data-form-type="contact" method="post"></form>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6"><a href="mailto:#"><i class="far fa-envelope"></i> frontdesk@suntexpower.com </a><br>
+                                <a href="tel:#"><i class="fas fa-phone-alt"></i> +(281) 638-7604</a></div>
+                            <div class="col-6"><a class="" target="_black" href="https://www.facebook.com/SunTexPower/"><i style="font-size: 30px;" class="fab fa-facebook"></i></a>
+                                <a class="ml-3" target="_black" href="https://instagram.com/suntexpower?igshid=fmm3gsqjbqoi"><i style="font-size: 30px;" class="fab fa-instagram"></i></a></div>
+                        </div>
+
+                        <br>
+
+
+                        <input type="hidden" name="contact_number">
+                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                            <label class="form-label" for="contact-name">First Name<span class="req-symbol">*</span></label>
+                            <input class="form-input" id="contact-name" type="text" name="firstName" data-constraints="@Required">
+                        </div>
+                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                            <label class="form-label" for="contact-name2">Last Name <span class="req-symbol">*</span></label>
+                            <input class="form-input" id="contact-name2" type="text" name="lastName" data-constraints="@Required">
+                        </div>
+                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                            <label class="form-label" for="contact-phone">Phone <span class="req-symbol">*</span></label>
+                            <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Required @PhoneNumber">
+                        </div>
+                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                            <label class="form-label" for="contact-email">E-Mail<span class="req-symbol">*</span></label>
+                            <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
+                        </div>
+                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                            <label class="form-label label-textarea" for="contact-message">Address  <span class="req-symbol">*</span></label>
+                            <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                        </div>
+                        <!--Google captcha-->
+                        <div class="form-wrap text-left form-validation-left">
+                            <div class="recaptcha" id="captcha1" data-sitekey="6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt"></div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <iframe src="https://msgsndr.com/widget/form/6vwNsoOYOT81Z36c0IUm" style="border:none;width:100%;" scrolling="no" id="6vwNsoOYOT81Z36c0IUm"></iframe>
+        <script src="https://msgsndr.com/js/form_embed.js"></script>
         <!--Footer-->
         <footer class="section footer-classic section-sm">
             <div class="container">
@@ -223,7 +284,7 @@
                         <P class="footer-classic-title">contact info</P>
                         <div class="d-block offset-top-0">US (Houston)</span>
                         </div>
-                        <a class="d-inline-block accent-link" href="mailto:#"> casey.suntexpower@gmail.com
+                        <a class="d-inline-block accent-link" href="mailto:#"> frontdesk@suntexpower.com
             </a><a class="d-inline-block" href="tel:#">+(281) 638-7604</a>
                     </div>
 
@@ -259,6 +320,8 @@
             </div>
         </footer>
         </div>
+        <iframe src="https://msgsndr.com/widget/form/6vwNsoOYOT81Z36c0IUm" style="border:none;width:100%;" scrolling="no" id="6vwNsoOYOT81Z36c0IUm"></iframe>
+        <script src="https://msgsndr.com/js/form_embed.js"></script>
         <div class="snackbars" id="form-output-global"></div>
         <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="js/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -268,6 +331,24 @@
         <script>
             $(function() {
                 $('[data-toggle="popover"]').popover()
+            });
+
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_yekv3yc', 'template_cb5ezj8', this)
+                    .then(function() {
+                        //console.log('SUCCESS!');
+                        document.getElementsByName('name').value = "";
+                        document.getElementsByName('phone').value = "";
+                        document.getElementsByName('email').value = "";
+                        document.getElementsByName('message').value = "";
+                        $('#exampleModal').modal('hide');
+                    }, function(error) {
+                        $('#exampleModal').modal('hide');
+                    });
             });
 
             window.onload = function() {
@@ -320,6 +401,7 @@
 
             function totalToBill() {
 
+
                 document.getElementById('btngoSola').setAttribute('style', 'display:block;background: #ec9122;padding: 10px;border-radius: 5px;color: #FFF;margin-left: auto;max-width: 150px;margin-right: auto;');
                 totalConsum = 0;
                 tmpTotalBill = document.getElementById('totalBill').value;
@@ -371,8 +453,8 @@
                     } else {
                         solar.push(0);
                     }
-                    totalEnergyNormal += valorEnergiNormal;
-                    totalEnergySolar += priceYear;
+                    totalEnergyNormal += (valorEnergiNormal * 12);
+                    totalEnergySolar += (priceYear * 12);
                     normal.push(valorEnergiNormal);
                     valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
                 }
@@ -442,7 +524,9 @@
                         }
                     },
                 });
-
+                setTimeout(function() {
+                    $('#exampleModal').modal('show');
+                }, 5000);
             }
 
             function totalToConsum() {
@@ -496,8 +580,8 @@
                     } else {
                         solar.push(0);
                     }
-                    totalEnergyNormal += valorEnergiNormal;
-                    totalEnergySolar += priceYear;
+                    totalEnergyNormal += (valorEnergiNormal * 12);
+                    totalEnergySolar += (priceYear * 12);
                     normal.push(valorEnergiNormal);
                     valorEnergiNormal = (valorEnergiNormal * 0.04) + valorEnergiNormal;
                 }
