@@ -225,7 +225,6 @@
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <form class="rd-mailform text-left" id="contact-form" data-form-output="form-output-global" data-form-type="contact" method="post"></form>
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
@@ -266,10 +265,7 @@
                                 <label class="form-label label-textarea" for="contact-message">Address  <span class="req-symbol">*</span></label>
                                 <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
                             </div>
-                            <!--Google captcha-->
-                            <div class="form-wrap text-left form-validation-left">
-                                <div class="recaptcha" id="captcha1" data-sitekey="6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt"></div>
-                            </div>
+
                             <div class="form-button group-sm text-center text-lg-left">
                                 <button class="button button-primary" type="submit">Send</button>
                             </div>
@@ -342,7 +338,8 @@
 
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-                // generate a five digit number for the contact_number variable
+                console.log('test')
+                    // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('service_yekv3yc', 'template_cb5ezj8', this)
