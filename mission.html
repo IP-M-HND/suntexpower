@@ -187,6 +187,10 @@
         window.onload = function() {
             document.getElementById('newsletter').addEventListener('submit', function(event) {
                 event.preventDefault();
+                if ($("input[name='emailNewsletter']").val() === null || $("input[name='emailNewsletter']").val() === '') {
+
+                    return false;
+                }
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps

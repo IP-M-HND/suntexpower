@@ -338,14 +338,34 @@
 
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-                console.log('test')
-                    // generate a five digit number for the contact_number variable
+                if ($("input[name='firstName']").val() === null || $("input[name='firstName']").val() === '') {
+
+                    return false;
+                }
+                if ($("input[name='lastName']").val() === null || $("input[name='lastName']").val() === '') {
+                    console.log('sin last')
+                    return false;
+                }
+                if ($("input[name='phone']").val() === null || $("input[name='phone']").val() === '') {
+
+                    return false;
+                }
+                if ($("input[name='email']").val() === null || $("input[name='email']").val() === '') {
+
+                    return false;
+                }
+                if ($("input[name='message']").val() === null || $("input[name='message']").val() === '') {
+
+                    return false;
+                }
+                // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('service_yekv3yc', 'template_cb5ezj8', this)
                     .then(function() {
                         //console.log('SUCCESS!');
-                        document.getElementsByName('name').value = "";
+                        document.getElementsByName('firstName').value = "";
+                        document.getElementsByName('lastName').value = ""
                         document.getElementsByName('phone').value = "";
                         document.getElementsByName('email').value = "";
                         document.getElementsByName('message').value = "";
@@ -358,6 +378,10 @@
             window.onload = function() {
                 document.getElementById('newsletter').addEventListener('submit', function(event) {
                     event.preventDefault();
+                    if ($("input[name='emailNewsletter']").val() === null || $("input[name='emailNewsletter']").val() === '') {
+
+                        return false;
+                    }
                     // generate a five digit number for the contact_number variable
                     this.contact_number.value = Math.random() * 100000 | 0;
                     // these IDs from the previous steps
