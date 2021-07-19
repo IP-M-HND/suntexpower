@@ -74,7 +74,7 @@
             pageTransition({
                 target: document.querySelector('.page'),
                 delay: 0,
-                duration: 100,
+                duration: 80,
                 classIn: 'fadeIn',
                 classOut: 'fadeOut',
                 classActive: 'animated',
@@ -84,7 +84,7 @@
                 onTransitionStart: function(options) {
                     setTimeout(function() {
                         plugins.preloader.removeClass('loaded');
-                    }, options.duration * .25);
+                    }, options.duration * .15);
                 },
                 onReady: function() {
                     plugins.preloader.addClass('loaded');
