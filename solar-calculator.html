@@ -134,7 +134,7 @@
                 <div class="card" style="background:url('images/4850037.jpg')no-repeat;background-size:cover">
                     <div class="card-body" style="padding-top: 0;">
                         <div class="section-name wow fadeInRight text-center" style="margin-left: auto;margin-right: auto;max-width: 600px;margin-top: -35px;    background: #04AA6D;border-radius: 15px 15px 0px 0px;" data-wow-delay=".2s">
-                            <h3 style="color: #FFF;text-shadow: 1px 1px 1px rgb(36, 36, 37);">SOLAR (CALCULATOR)</h3>
+                            <h3 style="color: #FFF;text-shadow: 1px 1px 1px rgb(36, 36, 37);">Solar Savings ( Calculator )</h3>
                         </div>
                         <br>
                         <div id="app">
@@ -197,7 +197,7 @@
                                     box-shadow: -5px 9px 5px 0px rgb(0 0 0 / 70%);
                                     -webkit-box-shadow: -5px 9px 5px 0px rgb(0 0 0 / 70%);
                                     -moz-box-shadow: -5px 9px 5px 0px rgba(0,0,0,0.7);" role="alert">
-                                        YOU NEED <br><span id="panels">0 </span> PANELS <i class="fas fa-solar-panel"></i>
+                                        You need <br><span id="panels">X </span> Solar Panels <i class="fas fa-solar-panel"></i>
                                         <span style="display: none;" id="sssn">0 kw</span>
                                     </div>
 
@@ -265,7 +265,14 @@
                                 <label class="form-label label-textarea" for="contact-message">Address  <span class="req-symbol">*</span></label>
                                 <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
                             </div>
-
+                            <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                <label class="form-label label-textarea" for="zip-code">Zip Code  <span class="req-symbol">*</span></label>
+                                <input class="form-input" id="zip-code" type="text" name="zipCode" required data-constraints="@Required">
+                            </div>
+                            <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                <label class="form-label label-textarea" for="city">City  <span class="req-symbol">*</span></label>
+                                <input class="form-input" id="ccity" type="text" name="city" required data-constraints="@Required">
+                            </div>
                             <div class="form-button group-sm text-center text-lg-left">
                                 <button class="button button-primary" type="submit">Send</button>
                             </div>
@@ -358,6 +365,12 @@
 
                     return false;
                 }
+                if ($("input[name='zipCode']").val() === null || $("input[name='zipCode']").val() === '') {
+                    return false;
+                }
+                if ($("input[name='city']").val() === null || $("input[name='city']").val() === '') {
+                    return false;
+                }
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
@@ -369,6 +382,8 @@
                         document.getElementsByName('phone').value = "";
                         document.getElementsByName('email').value = "";
                         document.getElementsByName('message').value = "";
+                        document.getElementsByName('zipCode').value = "";
+                        document.getElementsByName('city').value = "";
                         $('#exampleModal').modal('hide');
                     }, function(error) {
                         $('#exampleModal').modal('hide');
@@ -679,8 +694,21 @@
                 }, 10000);
             }
         </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPED55HTM0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        <!--coded by Drel-->
-</body>
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-</html>
+            gtag('config', 'G-MPED55HTM0'); <
+            /script
+            <!--coded by Drel-->
+            <
+            /body>
+
+            <
+            /html>
