@@ -121,6 +121,16 @@
         /* Media Query for Large screens */
         @media (min-width: 1281px) {}
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 412077178 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-412077178"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-412077178');
+    </script>
 </head>
 
 <body>
@@ -1003,7 +1013,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -1019,6 +1029,23 @@
     &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
+
+    <!-- Event snippet for Form Submit conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-412077178/fBXLCLaBgvwBEPqYv8QB',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </body>
 
 </html>
