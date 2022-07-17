@@ -301,15 +301,9 @@
                             data-form-type="contact" method="post">
                             <input type="hidden" name="contact_number">
                             <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                <label class="form-label" for="contact-name">First Name<span
+                                <label class="form-label" for="contact-name">First & Last Name<span
                                         class="req-symbol">*</span></label>
                                 <input class="form-input" id="contact-name" type="text" name="firstName"
-                                    data-constraints="@Required">
-                            </div>
-                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                <label class="form-label" for="contact-name2">Last Name <span
-                                        class="req-symbol">*</span></label>
-                                <input class="form-input" id="contact-name2" type="text" name="lastName"
                                     data-constraints="@Required">
                             </div>
                             <div class="form-wrap" style="border: 1px solid #aeadad;">
@@ -330,18 +324,7 @@
                                 <textarea class="form-input" id="contact-message" name="message"
                                     data-constraints="@Required"></textarea>
                             </div>
-                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                <label class="form-label label-textarea" for="zip-code">Zip Code <span
-                                        class="req-symbol">*</span></label>
-                                <input class="form-input" id="zip-code" type="text" name="zipCode" required
-                                    data-constraints="@Required">
-                            </div>
-                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                <label class="form-label label-textarea" for="city">City <span
-                                        class="req-symbol">*</span></label>
-                                <input class="form-input" id="ccity" type="text" name="city" required
-                                    data-constraints="@Required">
-                            </div>
+                            
                             <div class="form-button group-sm text-center text-lg-left">
                                 <button class="button button-primary" type="submit">Send</button>
                             </div>
@@ -523,7 +506,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label" for="contact-name">First Name<span
+                                                <label class="form-label" for="contact-name">First & Last Name<span
                                                         class="req-symbol">*</span></label>
                                                 <input class="form-input" id="contact-name" type="text" name="firstName"
                                                     required data-constraints="@Required">
@@ -532,23 +515,15 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label" for="contact-name2">Last Name <span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="contact-name2" type="text" name="lastName"
-                                                    required data-constraints="@Required">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
                                                 <label class="form-label" for="contact-phone">Phone <span
                                                         class="req-symbol">*</span></label>
                                                 <input class="form-input" id="contact-phone" type="text" name="phone"
                                                     required data-constraints="@Required @PhoneNumber">
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-wrap" style="border: 1px solid #aeadad;">
                                                 <label class="form-label" for="contact-email">E-Mail<span
@@ -557,34 +532,12 @@
                                                     required data-constraints="@Required @Email">
                                             </div>
                                         </div>
-                                    </div>
-
-
-                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-wrap" style="border: 1px solid #aeadad;">
                                                 <label class="form-label label-textarea" for="contact-message">Address
                                                     <span class="req-symbol">*</span></label>
                                                 <textarea class="form-input" id="contact-message" name="message"
                                                     required data-constraints="@Required"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label label-textarea" for="zip-code">Zip Code <span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="zip-code" type="text" name="zipCode"
-                                                    required data-constraints="@Required">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label label-textarea" for="city">City <span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="ccity" type="text" name="city" required
-                                                    data-constraints="@Required">
                                             </div>
                                         </div>
                                     </div>
@@ -678,9 +631,6 @@
             if ($("form#contact-form input[name='firstName']").val() === null || $("form#contact-form input[name='firstName']").val() === '') {
                 return false;
             }
-            if ($("form#contact-form input[name='lastName']").val() === null || $("form#contact-form input[name='lastName']").val() === '') {
-                return false;
-            }
             if ($("form#contact-form input[name='phone']").val() === null || $("form#contact-form input[name='phone']").val() === '') {
                 return false;
             }
@@ -688,12 +638,6 @@
                 return false;
             }
             if ($("form#contact-form input[name='message']").val() === null || $("form#contact-form input[name='message']").val() === '') {
-                return false;
-            }
-            if ($("form#contact-form input[name='zipCode']").val() === null || $("form#contact-form input[name='zipCode']").val() === '') {
-                return false;
-            }
-            if ($("form#contact-form input[name='city']").val() === null || $("form#contact-form input[name='city']").val() === '') {
                 return false;
             }
 
@@ -704,12 +648,9 @@
                 .then(function () {
                     //console.log('SUCCESS!');
                     $("form#contact-form input[name='firstName']").val('');
-                    $("form#contact-form input[name='lastName']").val('');
                     $("form#contact-form input[name='phone']").val('');
                     $("form#contact-form input[name='email']").val('');
                     $("form#contact-form input[name='message']").val('');
-                    $("form#contact-form input[name='zipCode']").val('');
-                    $("form#contact-form input[name='city']").val('');
                     $('#exampleModal').modal('hide');
                 }, function (error) {
                     $('#exampleModal').modal('hide');
@@ -724,9 +665,6 @@
             if ($("form#contact-form1 input[name='firstName']").val() === null || $("form#contact-form1 input[name='firstName']").val() === '') {
                 return false;
             }
-            if ($("form#contact-form1 input[name='lastName']").val() === null || $("form#contact-form1 input[name='lastName']").val() === '') {
-                return false;
-            }
             if ($("form#contact-form1 input[name='phone']").val() === null || $("form#contact-form1 input[name='phone']").val() === '') {
                 return false;
             }
@@ -734,12 +672,6 @@
                 return false;
             }
             if ($("form#contact-form1 input[name='message']").val() === null || $("form#contact-form1 input[name='message']").val() === '') {
-                return false;
-            }
-            if ($("form#contact-form1 input[name='zipCode']").val() === null || $("form#contact-form1 input[name='zipCode']").val() === '') {
-                return false;
-            }
-            if ($("form#contact-form1 input[name='city']").val() === null || $("form#contact-form1 input[name='city']").val() === '') {
                 return false;
             }
 
@@ -750,12 +682,9 @@
                 .then(function () {
                     //console.log('SUCCESS!');
                     $("form#contact-form1 input[name='firstName']").val('');
-                    $("form#contact-form1 input[name='lastName']").val('');
                     $("form#contact-form1 input[name='phone']").val('');
                     $("form#contact-form1 input[name='email']").val('');
                     $("form#contact-form1 input[name='message']").val('');
-                    $("form#contact-form1 input[name='zipCode']").val('');
-                    $("form#contact-form1 input[name='city']").val('');
                     document.getElementById('contact-form1').setAttribute('style', 'display:none');
                     document.getElementById('successMesaje1').setAttribute('style', 'display:block');
                 }, function (error) {

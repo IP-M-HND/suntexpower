@@ -60,6 +60,12 @@ video.fillWidth {
     background-position: center;
 }
 
+.fondoTrama3 {
+    background-image: url(../images/4909528.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .alert-success {
     color: #fff;
     font-weight: bold;
