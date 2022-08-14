@@ -1,36 +1,47 @@
-var app = new Vue({
-    el: "#app",
-    data: {
-        totalBill: 0,
-        totalConsum: 0,
-        sssn: 0,
-        rate: 0.14,
-        capacity: 34.5,
-    },
-    methods: {
-        key: function(num) {
-            return (this.total += num);
-        },
-        totalToBill: function() {
-            this.totalConsum = 0;
-            let kws = 0;
-            if (this.totalBill > 0) {
-                kws = parseFloat(this.totalBill) / parseFloat(this.rate);
-                this.totalConsum = kws;
-                this.sssn = (kws / this.capacity) * 340;
-                this.sssn = this.sssn.toFixed(4);
-            } else {
-                this.sssn = 0;
-            }
-        },
-        totalToConsum: function() {
-            this.totalBill = 0;
-            let kws = 0;
-            if (this.totalConsum > 0) {
-                kws = this.totalConsum;
-                this.totalBill = parseFloat(this.totalConsum) * this.rate;
-                this.sssn = (kws / this.capacity) * 340;
-            }
-        },
-    },
-});
+function div1(yes) {
+    if (yes) {
+        var element = document.getElementById("div1");
+        element.classList.add("d-none");
+
+        var element2 = document.getElementById("div2");
+        element2.classList.remove("d-none");
+
+        var element = document.getElementById("progressbar");
+        element.classList.add("w-25");
+        var element2 = document.getElementById("progressbar");
+        element2.classList.remove("w-0");
+    } else {
+        var element = document.getElementById("div1");
+        element.classList.add("d-none");
+
+        var element2 = document.getElementById("div0");
+        element2.classList.remove("d-none");
+    }
+}
+
+function div2() {
+
+    var element = document.getElementById("progressbar");
+    element.classList.add("w-50");
+    var element2 = document.getElementById("progressbar");
+    element2.classList.remove("w-25");
+
+    var element = document.getElementById("div2");
+    element.classList.add("d-none");
+
+    var element2 = document.getElementById("div3");
+    element2.classList.remove("d-none");
+}
+
+function div3() {
+    var element = document.getElementById("progressbar");
+    element.classList.add("w-75");
+    var element2 = document.getElementById("progressbar");
+    element2.classList.remove("w-50");
+
+    var element = document.getElementById("div3");
+    element.classList.add("d-none");
+
+    var element2 = document.getElementById("div4");
+    element2.classList.remove("d-none");
+}
