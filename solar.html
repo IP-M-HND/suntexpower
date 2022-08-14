@@ -29,7 +29,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://suntexpower.com/">
-    <script src="js/index.js"></script>
+
     <meta name="google-site-verification" content="bhLcZhr_hMB0eroXEZ33DzMarHjkMry2MqctEbzi-Qk" />
 
     <style>
@@ -59,7 +59,7 @@
 
 
         body {
-            background-image: linear-gradient(to right top, #f19d37, #ec9122, #ffae4b, #ee9e3b, #f8bf17) !important;
+            background:url('images/AbstractBackground07.jpg')no-repeat;background-size:cover;
         }
 
         /* Media Query for Mobile Devices */
@@ -240,7 +240,9 @@
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="products.html">Energy
                                                 Efficiency + More</a>
                                         </li>
-                                        <li class="rd-nav-item "><a class="rd-nav-link" href="solar.html">SOLAR</a>
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="solar.html">SOLAR</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="solar-quiz-new.html">QUIZ NEW</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="rd-nav-link"
                                                 style="background: #ec9122;padding: 10px;border-radius: 5px;"
@@ -266,13 +268,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xl-8 text-center">
-                                    <h3 class="font-weight-bold wow fadeInLeft">See How You Can Save With Solar Energy
-                                    </h3>
-                                    <br>
-                                    <div class="progress">
-                                        <div id="progressbar" class="progress-bar w-0" role="progressbar"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                    <h3 class="font-weight-bold wow fadeInLeft">Contact</h3>
                                     <hr>
                                 </div>
                             </div>
@@ -315,101 +311,51 @@
                                     <form class="rd-mailform text-left" id="contact-form"
                                         data-form-output="form-output-global" method="post">
                                         <input type="hidden" name="contact_number">
-
-                                        <div id="div1">
-                                            <h5>Are you the homeowner?</h5>
-                                            <label for="">Increase the value of your home</label><br>
-                                            <button type="button" onclick="div1(true)"
-                                                class="button button-primary">Yes, I own my
-                                                home</button>
-                                            <button type="button" onclick="div1(false)"
-                                                class="button button-primary">No, I
-                                                rent</button>
+                                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                            <label class="form-label" for="contact-name">First Name<span
+                                                    class="req-symbol">*</span></label>
+                                            <input class="form-input" id="contact-name" type="text" name="firstName"
+                                                required data-constraints="@Required">
                                         </div>
-
-                                        <div class="d-none" id="div0">
-                                            <h4>Sorry you didn't qualify</h4>
+                                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                            <label class="form-label" for="contact-name2">Last Name <span
+                                                    class="req-symbol">*</span></label>
+                                            <input class="form-input" id="contact-name2" type="text" name="lastName"
+                                                required data-constraints="@Required">
                                         </div>
-
-
-                                        <div class="d-none" id="div2">
-                                            <h5>Enter Your Street Address</h5>
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label label-textarea" for="contact-message">Address
-                                                    <span class="req-symbol">*</span></label>
-                                                <textarea class="form-input" id="contact-message" name="message"
-                                                    required data-constraints="@Required"></textarea>
-                                            </div>
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label label-textarea" for="zip-code">Zip Code <span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="zip-code" type="text" name="zipCode"
-                                                    required data-constraints="@Required">
-                                            </div>
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label label-textarea" for="city">City <span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="city" type="text" name="city" required
-                                                    data-constraints="@Required">
-                                            </div>
-                                            <button type="button" onclick="div2()" class="button button-primary">Next
-                                                Question</button>
+                                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                            <label class="form-label" for="contact-phone">Phone <span
+                                                    class="req-symbol">*</span></label>
+                                            <input class="form-input" id="contact-phone" type="text" name="phone"
+                                                required data-constraints="@Required @PhoneNumber">
                                         </div>
-
-                                        <div class="d-none" id="div3">
-                                            <h5>How high is the Electric bill you have?</h5>
-                                            <label for="">Reduce your electrical bill by up to 80%</label><br><br>
-                                            <label for="">How high is the Electric bill you have?*</label><br>
-                                            <select name="form-input" id="optionBill" style="display: block;
-                                            width: 100%;
-                                            padding: 0.375rem 0.75rem;
-                                            font-size: 1rem;
-                                            line-height: 1.5;
-                                            color: #495057;
-                                            background-color: #fff;
-                                            background-clip: padding-box;
-                                            border: 1px solid #ced4da;
-                                            border-radius: 0.25rem;
-                                            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;">
-                                                <option value="100-150">$100 - $150</option>
-                                                <option value="150-200">$150 - $200</option>
-                                                <option value="200-300">$200 - $300</option>
-                                                <option value="300+">$300+</option>
-                                            </select>
-                                            <button type="button" onclick="div3()" class="button button-primary">Next
-                                                Question</button>
+                                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                            <label class="form-label" for="contact-email">E-Mail<span
+                                                    class="req-symbol">*</span></label>
+                                            <input class="form-input" id="contact-email" type="email" name="email"
+                                                required data-constraints="@Required @Email">
                                         </div>
-
-                                        <div class="d-none" id="div4">
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label" for="contact-name">First Name<span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="contact-name" type="text" name="firstName"
-                                                    required data-constraints="@Required">
-                                            </div>
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label" for="contact-name2">Last Name <span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="contact-name2" type="text" name="lastName"
-                                                    required data-constraints="@Required">
-                                            </div>
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label" for="contact-phone">Phone <span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="contact-phone" type="text" name="phone"
-                                                    required data-constraints="@Required @PhoneNumber">
-                                            </div>
-                                            <div class="form-wrap" style="border: 1px solid #aeadad;">
-                                                <label class="form-label" for="contact-email">E-Mail<span
-                                                        class="req-symbol">*</span></label>
-                                                <input class="form-input" id="contact-email" type="email" name="email"
-                                                    required data-constraints="@Required @Email">
-                                            </div>
-                                            <div class="form-button group-sm text-center text-lg-left">
-                                                <button class="button button-primary" type="submit">Send</button>
-                                            </div>
+                                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                            <label class="form-label label-textarea" for="contact-message">Address
+                                                <span class="req-symbol">*</span></label>
+                                            <textarea class="form-input" id="contact-message" name="message" required
+                                                data-constraints="@Required"></textarea>
                                         </div>
-
+                                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                            <label class="form-label label-textarea" for="zip-code">Zip Code <span
+                                                    class="req-symbol">*</span></label>
+                                            <input class="form-input" id="zip-code" type="text" name="zipCode" required
+                                                data-constraints="@Required">
+                                        </div>
+                                        <div class="form-wrap" style="border: 1px solid #aeadad;">
+                                            <label class="form-label label-textarea" for="city">City <span
+                                                    class="req-symbol">*</span></label>
+                                            <input class="form-input" id="ccity" type="text" name="city" required
+                                                data-constraints="@Required">
+                                        </div>
+                                        <div class="form-button group-sm text-center text-lg-left">
+                                            <button class="button button-primary" type="submit">Send</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -513,11 +459,6 @@
                     return false;
                 }
 
-                var e = document.getElementById("optionBill");
-
-                var text = e.options[e.selectedIndex].text;
-                var textComplete = $("form#contact-form input[name='message']").val() + '  Electric bill ' + text;
-                $("form#contact-form input[name='message']").val(textComplete);
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
