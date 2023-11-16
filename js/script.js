@@ -26,7 +26,7 @@
             copyrightYear: $('.copyright-year'),
             owl: $('.owl-carousel'),
             progressLinear: $('.progress-linear'),
-            preloader: $('.preloader'),
+            //preloader: $('.preloader'),
             rdNavbar: $('.rd-navbar'),
             rdMailForm: $('.rd-mailform'),
             rdInputLabel: $('.form-label'),
@@ -74,7 +74,7 @@
             pageTransition({
                 target: document.querySelector('.page'),
                 delay: 0,
-                duration: 80,
+                duration: 30,
                 classIn: 'fadeIn',
                 classOut: 'fadeOut',
                 classActive: 'animated',
