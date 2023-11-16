@@ -102,6 +102,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Regular"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -109,6 +110,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Condensed"), url("../fonts/MYRIADPRO-COND.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -116,6 +118,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Condensed Italic"), url("../fonts/MYRIADPRO-CONDIT.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -123,6 +126,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Light"), url("../fonts/MyriadPro-Light.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -130,6 +134,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Semibold"), url("../fonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -137,6 +142,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Semibold Italic"), url("../fonts/MYRIADPRO-SEMIBOLDIT.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -144,6 +150,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Bold Condensed"), url("../fonts/MYRIADPRO-BOLDCOND.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -151,6 +158,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Bold"), url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -158,6 +166,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Bold Italic"), url("../fonts/MYRIADPRO-BOLDIT.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -165,6 +174,7 @@ div.pricing-box {
     font-style: normal;
     font-weight: normal;
     src: local("Myriad Pro Bold Condensed Italic"), url("../fonts/MYRIADPRO-BOLDCONDIT.woff") format("woff");
+    font-display: swap;
 }
 
 .context-dark,
